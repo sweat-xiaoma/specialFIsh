@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EmailUI" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="1280" height="720" verticalCenter="0" horizontalCenter="0" fillAlpha="0.7"/>
+	<e:Group id="root" width="1280" height="720" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="titleBg" width="1003" height="607" horizontalCenter="0" top="52" source="common_panel_bg_png" scale9Grid="99,105,812,433"/>
+		<e:Image id="titleBg0" scale9Grid="502,0,86,74" horizontalCenter="0" top="68" source="rank_title_png" fillMode="clip"/>
+		<e:Button id="closeBtn" label="" width="63" anchorOffsetX="31.5" anchorOffsetY="31.5" horizontalCenter="467.5" verticalCenter="-269.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_close_btn_png" source.down="common_close_btn_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image fillMode="clip" source="rank_di_png" left="157" verticalCenter="16.5"/>
+		<e:Group left="410" top="137">
+			<e:Image id="bg1" scale9Grid="27,0,4,105" source="rank_item_bg_png" fillMode="clip" left="0" top="0"/>
+			<e:Label id="orderOther" text="" verticalCenter="-3" left="21" textColor="0xFFFFFF" anchorOffsetX="0" width="84" verticalAlign="middle" height="50" size="24" textAlign="center"/>
+			<e:Group id="numGroup1" width="1" height="1" verticalCenter="-4" horizontalCenter="-275">
+			<e:Image id="rankImg" horizontalCenter="-12.5" verticalCenter="0" source="common_rankicon_1_png" fillMode="clip" visible="false"/>
+				<e:Image id="rankImg1" horizontalCenter="-12.5" verticalCenter="0" fillMode="clip" source="common_rankicon_2_png" visible="false"/>
+				<e:Image id="rankImg2" horizontalCenter="-12.5" verticalCenter="0" fillMode="clip" source="common_rankicon_3_png" visible="false"/>
+				<e:Image id="rankImg0" horizontalCenter="360" verticalCenter="-26.5" fillMode="clip" anchorOffsetX="0" width="109" source="rank_yiju_png"/>
+			</e:Group>
+			<e:Label id="nameLab1" text="名称" verticalCenter="-26" textAlign="left" left="242" textColor="0xFFFFFF" anchorOffsetX="0" width="169"/>
+			<e:Group id="headGroup" width="95" height="95" x="122" y="10" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image x="257" y="64" source="rank_jiangli_png"/>
+			<e:Image x="321" y="57" fillMode="scale" scale9Grid="34,4,204,25" source="rank_item_award_bg_png"/>
+			<e:Label id="rewardNumTxt" text="" verticalCenter="17.5" textAlign="left" left="352" anchorOffsetX="0" width="231" size="27" textColor="0xF3C50D"/>
+			<e:Group id="rewardImg" width="45" height="43" x="311" y="53" anchorOffsetX="0" anchorOffsetY="0">
+				<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle"/>
+				</e:layout>
+			</e:Group>
+			<e:Image x="483.5" y="10" fillMode="scale" scale9Grid="34,4,204,25" source="rank_item_award_bg_png" anchorOffsetX="0" width="197"/>
+			<e:Label id="numLal1" text="111111111" verticalCenter="-30" textAlign="center" left="484" textColor="0xFFFFFF" anchorOffsetX="0" width="189"/>
+		</e:Group>
+		<e:Scroller id="scrol" width="696" height="342" y="266" x="412" anchorOffsetY="0" anchorOffsetX="0">
+			<e:Group id="scrolGroup" width="696" height="342" anchorOffsetY="0">
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+		<e:Scroller id="leftScrol" width="223" height="460" x="158" y="143" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Group id="leftGroup">
+				<e:Group id="jinbiBtn" scaleX="1" scaleY="1" left="18" top="0">
+					<e:Image left="0" top="0" fillMode="clip" source="common_btn_long_n_png"/>
+					<e:Image id="jinbiSelImg" source="duanzao_anniu_png" fillMode="clip"/>
+					<e:Image anchorOffsetX="0.5" anchorOffsetY="0.5" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" fillMode="clip" source="rank_jinbi_png"/>
+				</e:Group>
+				<e:Group id="yingliBtn" scaleX="1" scaleY="1" left="19" top="82">
+					<e:Image scaleX="1" scaleY="1" left="0" top="0" fillMode="clip" source="common_btn_long_n_png"/>
+					<e:Image id="yingliSelImg" scaleX="1" scaleY="1" source="duanzao_anniu_png" fillMode="clip" left="0" top="0"/>
+					<e:Image anchorOffsetX="0.5" anchorOffsetY="0.5" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" fillMode="clip" source="rank_yingli_png"/>
+				</e:Group>
+				<e:Group id="jingjiBtn" scaleX="1" scaleY="1" left="18" top="167">
+					<e:Image scaleX="1" scaleY="1" left="0" top="0" fillMode="clip" source="common_btn_long_n_png"/>
+					<e:Image id="jingjiSelImg" scaleX="1" scaleY="1" source="duanzao_anniu_png" fillMode="clip" left="0" top="0"/>
+					<e:Image anchorOffsetX="0.5" anchorOffsetY="0.5" scaleX="1" scaleY="1" fillMode="clip" horizontalCenter="0" verticalCenter="0" source="rank_ri_png"/>
+				</e:Group>
+				<e:Group id="jingjiZhouBtn" scaleX="1" scaleY="1" left="18" top="252">
+					<e:Image scaleX="1" scaleY="1" left="0" top="0" source="common_btn_long_n_png"/>
+					<e:Image id="jingjiZhouSelImg" scaleX="1" scaleY="1" source="duanzao_anniu_png" left="0" top="0"/>
+					<e:Image anchorOffsetX="0.5" anchorOffsetY="0.5" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" source="rank_zhou_png"/>
+				</e:Group>
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+		<e:Label id="nullLab" text="排行榜暂无数据" horizontalCenter="127" verticalCenter="0" size="40" bold="true" visible="false"/>
+	</e:Group>
+</e:Skin>

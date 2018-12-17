@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WaveComing" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+	</w:Declarations>
+	<e:Image id="image1" x="0" y="200.5" source="wave_WenZi_png"/>
+	<e:Image id="image2" x="30" y="39.5" source="wave_WenZi_png" anchorOffsetX="158.5" anchorOffsetY="39.5" visible="false"/>
+</e:Skin>

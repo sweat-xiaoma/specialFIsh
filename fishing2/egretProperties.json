@@ -1,0 +1,49 @@
+{
+  "engineVersion": "5.0.11",
+  "compilerVersion": "5.0.11",
+  "template": {},
+  "target": {
+    "current": "web"
+  },
+  "eui": {
+    "exmlRoot": [
+      "resource/fish_skins"
+    ],
+    "themes": [
+      "resource/default.thm.json"
+    ],
+    "exmlPublishPolicy": "commonjs"
+  },
+  "modules": [
+    {
+      "name": "egret"
+    },
+    {
+      "name": "game"
+    },
+    {
+      "name": "res"
+    },
+    {
+      "name": "eui"
+    },
+    {
+      "name": "tween"
+    },
+    {
+      "name": "socket"
+    },
+    {
+      "name": "long",
+      "path": "./libs/long"
+    },
+    {
+      "name": "bytebuffer",
+      "path": "./libs/bytebuffer"
+    },
+    {
+      "name": "protobuf",
+      "path": "./libs/protobuf"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GunRateListItemSkin" width="86" height="35" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="160da13079f" ></w:Config>
+	<e:Group x="0" y="0" anchorOffsetX="0" width="85.75">
+		<e:Image id="shurubg" x="1.69" y="1.98" source="shuzhikuang_png"/>
+		<e:BitmapLabel width="83" x="2" y="2" verticalAlign="middle" textAlign="center" text="{data.bulletNum}" font="mini_num_font_fnt" height="30" letterSpacing="-2"/>
+	</e:Group>
+</e:Skin>

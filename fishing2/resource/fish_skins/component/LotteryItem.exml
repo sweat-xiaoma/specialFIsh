@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LotteryItem" width="142" height="199" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="0" y="0" source="lottery_item_png"/>
+	<e:Label id="name_txt" text="name" x="6" y="159.34" width="132" textAlign="center" size="22" fontFamily="SimHei" textColor="0xfff77f" strokeColor="0xff8a00"/>
+	<e:Label id="count_txt" text="998" x="31.6" y="116.2" size="16" width="75.27" textAlign="right" anchorOffsetX="0" fontFamily="SimHei"/>
+</e:Skin>

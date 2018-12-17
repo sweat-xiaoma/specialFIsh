@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="JjcUI" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.7"/>
+	<e:Group id="root" left="0" right="0" top="0" bottom="0">
+		<e:Image width="1003" height="640" scale9Grid="25,74,30,450" horizontalCenter="0" verticalCenter="0" source="common_panel_bg_png"/>
+		<e:Image source="common_panel_di2_png" horizontalCenter="1" verticalCenter="25" anchorOffsetX="0" width="965.92" anchorOffsetY="0" height="532.3" scale9Grid="15,62,95,378"/>
+		<e:Image source="jjc_img1_png" horizontalCenter="-361" verticalCenter="24"/>
+		<e:Button id="closeBtn" label="" horizontalCenter="466" verticalCenter="-282.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_close_btn_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="jjc_title_png" horizontalCenter="0" verticalCenter="-281"/>
+		<e:Image horizontalCenter="101.5" source="jjc_time_bg_png" verticalCenter="-201"/>
+		<e:Label id="openTime" text="开放时间：8：00:00- 23:00:00" textColor="0x0bfb10" size="20" fontFamily="SimHei" bold="true" textAlign="center" verticalCenter="-203" horizontalCenter="98.5"/>
+		<e:Group id="moreRule" horizontalCenter="406" verticalCenter="-203" locked="true">
+			<e:Button label="" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="common_btn_blue_normal_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image source="jjc_btn_rule_png" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Group anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="-27.5" verticalCenter="-31">
+			<e:Image source="jjc_item_bg_png"/>
+			<e:Image y="7.03" source="common_rankicon_1_png" horizontalCenter="1"/>
+			<e:Image y="74.02" horizontalCenter="0.5" source="main_iamge_avaBgR_png"/>
+			<e:Image id="head1" y="74.02" horizontalCenter="0.5" source=""/>
+			<e:Label id="name1" text="张学友" y="162.31" size="18" bold="true" fontFamily="SimHei" horizontalCenter="0.5"/>
+			<e:Image y="116.68" horizontalCenter="33.5" source="main_btn_vip_png"/>
+			<e:Label id="vip1" text="1" y="135.63" horizontalCenter="56.5" size="20" bold="true" fontFamily="SimHei"/>
+			<e:Label text="积分：" y="196.96" horizontalCenter="-45.5" size="17" bold="true" fontFamily="SimHei"/>
+			<e:Label id="score1" text="999999" y="196.96" horizontalCenter="14" size="17" fontFamily="SimHei"/>
+			<e:Image source="jjc_coin_bg_png" horizontalCenter="0" y="229.33"/>
+			<e:Image y="217.33" source="common_coins_png" horizontalCenter="-54.5"/>
+			<e:Label id="coins1" text="999999" y="234.3" horizontalCenter="12.5" size="17.25" fontFamily="SimHei" textAlign="center" width="100"/>
+		</e:Group>
+		<e:Group anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="174.5" verticalCenter="-31">
+			<e:Image source="jjc_item_bg_png"/>
+			<e:Image y="7.03" horizontalCenter="1" source="common_rankicon_2_png"/>
+			<e:Image y="74.02" source="main_iamge_avaBgR_png" horizontalCenter="0.5"/>
+			<e:Image id="head2" y="74.02" source="" horizontalCenter="0.5"/>
+			<e:Label id="name2" text="张学友" y="162.31" horizontalCenter="0.5" size="18" bold="true" fontFamily="SimHei"/>
+			<e:Image y="116.68" source="main_btn_vip_png" horizontalCenter="33.5"/>
+			<e:Label id="vip2" text="1" y="135.63" horizontalCenter="56.5" size="20" bold="true" fontFamily="SimHei"/>
+			<e:Label text="积分：" y="196.96" horizontalCenter="-45.5" size="17" bold="true" fontFamily="SimHei"/>
+			<e:Label id="score2" text="999999" y="196.96" horizontalCenter="14" size="17" fontFamily="SimHei"/>
+			<e:Image source="jjc_coin_bg_png" horizontalCenter="0" y="229.33"/>
+			<e:Image source="common_coins_png" y="217.33" horizontalCenter="-54.5"/>
+			<e:Label id="coins2" text="999999" y="234.3" horizontalCenter="12.5" size="17.25" fontFamily="SimHei" textAlign="center" width="100"/>
+		</e:Group>
+		<e:Group anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="379.5" verticalCenter="-31">
+			<e:Image source="jjc_item_bg_png"/>
+			<e:Image y="7.03" horizontalCenter="1" source="common_rankicon_3_png"/>
+			<e:Image y="74.02" source="main_iamge_avaBgR_png" horizontalCenter="0.5"/>
+			<e:Image id="head3" y="74.02" source="" horizontalCenter="0.5"/>
+			<e:Label id="name3" text="张学友" y="162.31" horizontalCenter="0.5" size="18" bold="true" fontFamily="SimHei"/>
+			<e:Image y="116.68" source="main_btn_vip_png" horizontalCenter="33.5"/>
+			<e:Label id="vip3" text="1" y="135.63" horizontalCenter="56.5" size="20" bold="true" fontFamily="SimHei"/>
+			<e:Label text="积分：" y="196.96" horizontalCenter="-45.5" size="17" bold="true" fontFamily="SimHei"/>
+			<e:Label id="score3" text="999999" y="196.96" horizontalCenter="14" size="17" fontFamily="SimHei"/>
+			<e:Image source="jjc_coin_bg_png" horizontalCenter="0" y="229.33"/>
+			<e:Image source="common_coins_png" y="217.33" horizontalCenter="-54.5"/>
+			<e:Label id="coins3" text="999999" y="234.3" horizontalCenter="12.5" size="17.25" fontFamily="SimHei" textAlign="center" width="100"/>
+		</e:Group>
+		<e:Group horizontalCenter="177" verticalCenter="151">
+			<e:Image scaleX="1" scaleY="1" source="jjc_di1_png"/>
+			<e:Label text="我的积分：" x="81" y="11" size="16.5" fontFamily="SimHei" bold="true"/>
+			<e:Label id="myScore" text="52689" x="163" y="11" size="16.5" fontFamily="SimHei"/>
+			<e:Label text="我的排名：" x="351" y="11" size="16.5" fontFamily="SimHei" bold="true"/>
+			<e:Label id="myRankNum" text="未上榜" x="435" y="11" size="16.5" fontFamily="SimHei"/>
+			<e:Label text="积分加成：" x="22" y="45" size="16.5" fontFamily="SimHei" bold="true"/>
+			<e:Label id="myScoreAdd" text="20%" x="106" y="45" size="16.5" fontFamily="SimHei" textColor="0x14ed2d" bold="true"/>
+			<e:Label text="次数加成：" x="214" y="45" size="16.5" fontFamily="SimHei" bold="true"/>
+			<e:Label id="myNumdd" text="20%" x="299" y="45" size="16.5" fontFamily="SimHei" textColor="0x14ED2D" bold="true"/>
+			<e:Label text="炮弹加成：" x="402" y="45" size="16.5" fontFamily="SimHei" bold="true"/>
+			<e:Label text="20%" x="487" y="45" size="16.5" fontFamily="SimHei" id="myScoreAdd1" textColor="0x14ED2D" bold="true"/>
+		</e:Group>
+		<e:Group horizontalCenter="110" verticalCenter="236">
+			<e:Image scaleX="1" scaleY="1" source="jjc_di2_png"/>
+			<e:Label text="挑战次数：" x="22" y="30" size="16.5" fontFamily="SimHei" bold="true"/>
+			<e:Label id="haveNum" text="21" x="101" y="28" size="21" fontFamily="SimHei" bold="true" textColor="0xf6ee0e" width="30" textAlign="center"/>
+			<e:Label text="（VIP" x="135" y="30" size="16.5" fontFamily="SimHei" bold="true"/>
+			<e:Label id="nextVip" text="22" x="181" y="28" size="21" fontFamily="SimHei" bold="true" textColor="0xF6EE0E" width="30" textAlign="center"/>
+			<e:Label text="可购买" x="214" y="30" size="16.5" fontFamily="SimHei" bold="true"/>
+			<e:Label id="nextNum" text="22" x="268" y="28" size="21" fontFamily="SimHei" bold="true" textColor="0xF6EE0E" width="30" textAlign="center"/>
+			<e:Label text="次）" x="302" y="30" size="16.5" fontFamily="SimHei" bold="true"/>
+			<e:Button id="btnAddNum" label="" x="400" y="12">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="main_btn_add_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="btnBegin" horizontalCenter="414" verticalCenter="238" locked="true">
+			<e:Button label="" horizontalCenter="0" verticalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="common_btn_blue_normal_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image source="jjc_btn_begin_png" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

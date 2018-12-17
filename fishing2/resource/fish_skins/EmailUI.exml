@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EmailUI" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="1280" height="720" verticalCenter="0" horizontalCenter="0" fillAlpha="0.7"/>
+	<e:Group id="root" width="1280" height="720" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="titleBg" width="1003" height="607" horizontalCenter="0" top="52" source="common_panel_bg_png" fillMode="scale" scale9Grid="444,115,97,426" anchorOffsetY="0"/>
+		<e:Image id="titleBg0" scale9Grid="502,0,86,74" horizontalCenter="0" top="68" source="XinXiang_png" fillMode="clip"/>
+		<e:Image width="976" height="511" horizontalCenter="0" verticalCenter="21.5" source="common_panel_di2_png" scale9Grid="26,10,60,443" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Button id="closeBtn" label="" horizontalCenter="459" verticalCenter="-268.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_close_btn_png" source.down="common_close_btn_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Scroller id="scroller" width="215" x="169" y="138">
+			<e:Group id="emailList" width="215" height="477.33">
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+		<e:Image width="704" height="416" x="395" y="138" anchorOffsetX="0" anchorOffsetY="0" fillMode="scale" source="common_bg_black_alpha_png" scale9Grid="10,8,17,23"/>
+		<e:Image width="704" height="2" x="395" y="192" source="common_xian_png" scale9Grid="5,0,106,2"/>
+		<e:Image x="767" y="313" source="common_fish_png" fillMode="clip"/>
+		<e:Scroller id="scroller0" width="455" x="409" y="451" height="85.33">
+			<e:Group id="rewardlList" width="455" height="85">
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+			</e:Group>
+		</e:Scroller>
+		<e:Label id="getStateLal" text="" x="412" y="152" textColor="0xffc233" fontFamily="黑体" stroke="1" strokeColor="0x353434"/>
+		<e:Label text="奖励" x="412" y="402" textColor="0xFFC233" fontFamily="黑体" stroke="1" strokeColor="0x353434"/>
+		<e:Label id="noneEmailLal" text="没有邮件" x="658" y="260.5" fontFamily="黑体" stroke="1" strokeColor="0x353434" anchorOffsetX="0" width="139" textColor="0xfcf9f2" alpha="0.5"/>
+		<e:Label id="expireTimeLal" text="" x="802" y="152" textColor="0xFFC233" fontFamily="黑体" stroke="1" strokeColor="0x353434" anchorOffsetX="0" width="287" verticalAlign="justify" textAlign="right"/>
+		<e:Label id="emailInfoLal" text="" x="481" y="208" fontFamily="黑体" stroke="1" strokeColor="0x353434" anchorOffsetY="0" height="185" anchorOffsetX="0" width="678" textColor="0xffffff" textAlign="left" verticalAlign="top"/>
+		<e:EditableText id="pageLal" width="138" height="36" text="" x="412" y="579.33" anchorOffsetY="0" anchorOffsetX="0"/>
+		<e:Group id="delBtn" width="130" height="48" horizontalCenter="359" verticalCenter="81">
+			<e:Image source="common_btn_blue_normal_png" fillMode="clip" top="0" left="0"/>
+			<e:Image fillMode="clip" source="email_del_png" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="getBtn" width="130" height="48" horizontalCenter="359" verticalCenter="143">
+			<e:Image source="common_btn_blue_normal_png" fillMode="clip" top="0" left="0"/>
+			<e:Image fillMode="clip" horizontalCenter="0" verticalCenter="0" source="email_lingqu_png"/>
+		</e:Group>
+		<e:Group id="delAllBtn" width="130" height="48" horizontalCenter="359" verticalCenter="231">
+			<e:Image source="common_btn_blue_normal_png" fillMode="clip" top="0" left="0"/>
+			<e:Image fillMode="clip" horizontalCenter="0" verticalCenter="0" source="email_yijian_png"/>
+		</e:Group>
+		<e:Group id="getAllBtn" width="130" height="48" horizontalCenter="205" verticalCenter="231">
+			<e:Image source="common_btn_blue_normal_png" fillMode="clip" top="0" left="0"/>
+			<e:Image fillMode="clip" horizontalCenter="0" verticalCenter="0" source="email_yijianlingqu_png"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

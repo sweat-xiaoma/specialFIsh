@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EmailItme" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="114" width="696">
+	<e:Group left="0" top="0">
+		<e:Image id="bg" scale9Grid="27,0,4,105" source="rank_item_bg_png" fillMode="clip" left="0" top="0"/>
+		<e:Group id="numGroup" width="1" height="1" verticalCenter="-4" horizontalCenter="-275">
+			<e:Image id="img1" horizontalCenter="-12.5" verticalCenter="0" source="common_rankicon_1_png" fillMode="clip" visible="false"/>
+			<e:Image id="img2" horizontalCenter="-13" verticalCenter="0" source="common_rankicon_2_png" fillMode="clip" visible="false"/>
+			<e:Image id="img3" horizontalCenter="-13" verticalCenter="0" source="common_rankicon_3_png" fillMode="clip" visible="false"/>
+		</e:Group>
+		<e:Label id="nameLab" text="名称" verticalCenter="-26" textAlign="left" left="242" textColor="0xffffff" anchorOffsetX="0" width="169"/>
+		<e:Group id="headGroup" width="95" height="95" x="122" y="10" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image x="257" y="64" source="rank_jiangli_png"/>
+		<e:Image x="321" y="57" fillMode="scale" scale9Grid="34,4,204,25" source="rank_item_award_bg_png"/>
+		<e:Image x="483.5" y="10" fillMode="scale" scale9Grid="34,4,204,25" source="rank_item_award_bg_png" anchorOffsetX="0" width="197"/>
+		<e:Label id="numLal" text="111111111" verticalCenter="-30" textAlign="center" left="492" textColor="0xFFFFFF" anchorOffsetX="0" width="181"/>
+		<e:Label id="rewardNumTxt" text="" verticalCenter="17.5" textAlign="left" left="352" anchorOffsetX="0" width="231" size="27" textColor="0xf3c50d"/>
+		<e:Label id="orderOther" text="" verticalCenter="-3" left="21" textColor="0xFFFFFF" anchorOffsetX="0" width="84" verticalAlign="middle" height="50" size="24" textAlign="center"/>
+		<e:Group id="orderImg" width="82" height="46" x="21" y="37" anchorOffsetX="0" anchorOffsetY="0">
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="rewardImg" width="45" height="43" x="311" y="53" anchorOffsetX="0" anchorOffsetY="0">
+			<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Image id="rankImg0" horizontalCenter="85.5" verticalCenter="-31" source="rank_yiju_png" fillMode="clip" anchorOffsetX="0" width="109"/>
+</e:Skin>

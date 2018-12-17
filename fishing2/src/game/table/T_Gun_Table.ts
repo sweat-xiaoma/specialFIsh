@@ -1,0 +1,578 @@
+// 炮
+class T_Gun {
+    public id = 0;
+    public type = 0;
+    public bulletNum = 0;
+    public upgradeOrForgeCost = "";     //锻造需要消耗的物品_数量
+    public upgradeOrForgeAward = "";
+    public forgeSuccessAlsoCost = "";   //消耗的精华
+    public abilityType1 = 0;
+	public gunAbility1 = 0;
+	public chance = 0;
+	public failAward = "";
+}
+
+class T_Gun_Table{
+    public static getVoByKey = function(t) {
+        var i = Gun_Table.length,
+        a = SerchUtil.binary_search(Gun_Table, "id", 0, i, t);
+        return <T_Gun>a
+    }
+    public static getAllVo = function() {
+        return Gun_Table
+    }
+}
+
+var Gun_Table = [
+{
+	id:1,
+	type:1,
+	bulletNum:1,
+	upgradeOrForgeCost:"10002_2",
+	upgradeOrForgeAward:"10001_100",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:2,
+	type:1,
+	bulletNum:2,
+	upgradeOrForgeCost:"10002_2",
+	upgradeOrForgeAward:"10001_100",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:3,
+	type:1,
+	bulletNum:3,
+	upgradeOrForgeCost:"10002_2",
+	upgradeOrForgeAward:"10001_100",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:4,
+	type:1,
+	bulletNum:4,
+	upgradeOrForgeCost:"10002_2",
+	upgradeOrForgeAward:"10001_100",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:5,
+	type:1,
+	bulletNum:5,
+	upgradeOrForgeCost:"10002_2",
+	upgradeOrForgeAward:"10001_200",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:6,
+	type:1,
+	bulletNum:6,
+	upgradeOrForgeCost:"10002_2",
+	upgradeOrForgeAward:"10001_200",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:7,
+	type:1,
+	bulletNum:7,
+	upgradeOrForgeCost:"10002_2",
+	upgradeOrForgeAward:"10001_200",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:8,
+	type:1,
+	bulletNum:8,
+	upgradeOrForgeCost:"10002_2",
+	upgradeOrForgeAward:"10001_200",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:9,
+	type:1,
+	bulletNum:9,
+	upgradeOrForgeCost:"10002_2",
+	upgradeOrForgeAward:"10001_200",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:10,
+	type:1,
+	bulletNum:10,
+	upgradeOrForgeCost:"10002_3",
+	upgradeOrForgeAward:"10001_1000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:11,
+	type:1,
+	bulletNum:20,
+	upgradeOrForgeCost:"10002_5",
+	upgradeOrForgeAward:"10001_2000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:12,
+	type:1,
+	bulletNum:30,
+	upgradeOrForgeCost:"10002_5",
+	upgradeOrForgeAward:"10001_3000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:13,
+	type:1,
+	bulletNum:40,
+	upgradeOrForgeCost:"10002_6",
+	upgradeOrForgeAward:"10001_5000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:14,
+	type:1,
+	bulletNum:50,
+	upgradeOrForgeCost:"10002_6",
+	upgradeOrForgeAward:"10001_6000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:15,
+	type:1,
+	bulletNum:60,
+	upgradeOrForgeCost:"10002_6",
+	upgradeOrForgeAward:"10001_6000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:16,
+	type:1,
+	bulletNum:70,
+	upgradeOrForgeCost:"10002_6",
+	upgradeOrForgeAward:"10001_7000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:17,
+	type:1,
+	bulletNum:80,
+	upgradeOrForgeCost:"10002_8",
+	upgradeOrForgeAward:"10001_7000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:18,
+	type:1,
+	bulletNum:90,
+	upgradeOrForgeCost:"10002_8",
+	upgradeOrForgeAward:"10001_8000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:19,
+	type:1,
+	bulletNum:100,
+	upgradeOrForgeCost:"10002_8",
+	upgradeOrForgeAward:"10001_8000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:20,
+	type:1,
+	bulletNum:200,
+	upgradeOrForgeCost:"10002_8",
+	upgradeOrForgeAward:"10001_10000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:21,
+	type:1,
+	bulletNum:300,
+	upgradeOrForgeCost:"10002_10",
+	upgradeOrForgeAward:"10001_10000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:22,
+	type:1,
+	bulletNum:400,
+	upgradeOrForgeCost:"10002_10",
+	upgradeOrForgeAward:"10001_10000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:23,
+	type:1,
+	bulletNum:500,
+	upgradeOrForgeCost:"10002_20",
+	upgradeOrForgeAward:"10001_20000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:24,
+	type:1,
+	bulletNum:600,
+	upgradeOrForgeCost:"10002_20",
+	upgradeOrForgeAward:"10001_50000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:25,
+	type:1,
+	bulletNum:700,
+	upgradeOrForgeCost:"10002_30",
+	upgradeOrForgeAward:"10001_50000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:26,
+	type:1,
+	bulletNum:800,
+	upgradeOrForgeCost:"10002_30",
+	upgradeOrForgeAward:"10001_80000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:27,
+	type:1,
+	bulletNum:900,
+	upgradeOrForgeCost:"10002_50",
+	upgradeOrForgeAward:"10001_100000",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:0,
+	failAward:"0"
+},
+{
+	id:28,
+	type:1,
+	bulletNum:1000,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_100",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:10000,
+	failAward:"80005_10"
+},
+{
+	id:29,
+	type:2,
+	bulletNum:1500,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_200",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:9500,
+	failAward:"80005_10"
+},
+{
+	id:30,
+	type:2,
+	bulletNum:2000,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_300",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:9000,
+	failAward:"80005_10"
+},
+{
+	id:31,
+	type:2,
+	bulletNum:2500,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_400",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:8500,
+	failAward:"80005_10"
+},
+{
+	id:32,
+	type:2,
+	bulletNum:3000,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_500",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:8000,
+	failAward:"80005_10"
+},
+{
+	id:33,
+	type:2,
+	bulletNum:3500,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_600",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:7500,
+	failAward:"80005_10"
+},
+{
+	id:34,
+	type:2,
+	bulletNum:4000,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_700",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:8000,
+	failAward:"80005_10"
+},
+{
+	id:35,
+	type:2,
+	bulletNum:4500,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_800",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:6500,
+	failAward:"80005_10"
+},
+{
+	id:36,
+	type:2,
+	bulletNum:5000,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_900",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:6000,
+	failAward:"80005_10"
+},
+{
+	id:37,
+	type:2,
+	bulletNum:5500,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_1000",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:5500,
+	failAward:"80005_10"
+},
+{
+	id:38,
+	type:2,
+	bulletNum:6000,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_1100",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:5000,
+	failAward:"80005_10"
+},
+{
+	id:39,
+	type:2,
+	bulletNum:6500,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_1200",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:4500,
+	failAward:"80005_10"
+},
+{
+	id:40,
+	type:2,
+	bulletNum:8000,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_1300",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:4000,
+	failAward:"80005_10"
+},
+{
+	id:41,
+	type:2,
+	bulletNum:7500,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_1400",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:3500,
+	failAward:"80005_10"
+},
+{
+	id:42,
+	type:2,
+	bulletNum:8000,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_1500",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:3000,
+	failAward:"80005_10"
+},
+{
+	id:43,
+	type:2,
+	bulletNum:8500,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_1600",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:2500,
+	failAward:"80005_10"
+},
+{
+	id:44,
+	type:2,
+	bulletNum:9000,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_1700",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:2000,
+	failAward:"80005_10"
+},
+{
+	id:45,
+	type:2,
+	bulletNum:9500,
+	upgradeOrForgeCost:"80001_10,80002_10,80003_10,80004_10",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"80005_1800",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:1500,
+	failAward:"80005_10"
+},
+{
+	id:46,
+	type:2,
+	bulletNum:10000,
+	upgradeOrForgeCost:"0",
+	upgradeOrForgeAward:"0",
+	forgeSuccessAlsoCost:"0",
+	abilityType1:0,
+	gunAbility1:0,
+	chance:1000,
+	failAward:"80005_10"
+}]

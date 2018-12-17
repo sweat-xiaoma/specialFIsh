@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TabButton" width="178" height="65" xmlns:e="http://ns.egret.com/eui"  states="up,down" >
+	<e:Image id="iconDisplay" horizontalCenter="0" verticalCenter="0" source.down="{data.down}" source.up="{data.up}"/>
+</e:Skin>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="JbcItemUI" width="654" height="70" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="jbc_line_png" horizontalCenter="0" bottom="0"/>
+	<e:Image id="icon" source="common_rankicon_1_png" x="55" y="6"/>
+	<e:Label id="index" text="1" x="57" y="30" size="18" fontFamily="SimHei" bold="true" width="100" textAlign="center" visible="false"/>
+	<e:Image id="head" x="211" y="6" source="coomon_item_bg_png" width="60" height="60"/>
+	<e:Label id="uname" text="刘德华" x="308" y="26" size="18" fontFamily="SimHei" bold="true" width="160" textAlign="center"/>
+	<e:Image id="award_icon" x="500" y="6" width="60" height="60" source="common_point_ticket_png"/>
+	<e:Label id="award_txt" text="X1000" x="561" y="34" size="18" fontFamily="SimHei" bold="true" textAlign="center" textColor="0x0bfb10"/>
+</e:Skin>

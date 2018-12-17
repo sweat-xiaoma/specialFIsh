@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="NoticeItemBtnUI" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="unSelectImg" scaleX="1" scaleY="1" fillMode="clip" source="common_select_normal_png" left="0" top="0"/>
+	<e:Image id="selectImg" source="common_select_check_png" fillMode="clip" left="0" top="0"/>
+	<e:Label id="titleTxt" text="这个是公告dd" anchorOffsetX="0" width="174" anchorOffsetY="0" height="77" size="24" touchEnabled="false" textAlign="center" bold="true" strokeColor="0x66340f" stroke="2" verticalAlign="middle" left="7" verticalCenter="0"/>
+</e:Skin>

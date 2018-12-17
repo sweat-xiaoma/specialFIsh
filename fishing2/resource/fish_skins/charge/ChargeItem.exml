@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChargeItem" width="432" height="88" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="root" width="432" height="88">
+		<e:Image source="dise_bg_png" x="69" y="22"/>
+		<e:Image id="chongzhi_btn" source="common_btn_blue_normal_png" x="319" y="27" anchorOffsetX="0" width="111" anchorOffsetY="0" height="38.76"/>
+		<e:Image id="ico2" source="jinbi_big_png" x="139" y="27" anchorOffsetX="0" width="34" anchorOffsetY="0" height="34"/>
+		<e:Image id="ico1" source="jinbi_big_png" x="13" y="27" anchorOffsetX="0" width="34" anchorOffsetY="0" height="34"/>
+		<e:Image id="ico3" source="jinbi_big_png" x="268" y="27" anchorOffsetX="0" width="34" anchorOffsetY="0" height="34"/>
+		<e:Label id="money_1_txt" text="6480" x="75" y="34" size="24" textAlign="right" anchorOffsetX="0" width="64"/>
+		<e:Label id="money_2_txt" text="赠6480" x="181" y="34" size="24" textAlign="right" anchorOffsetX="0" width="86"/>
+		<e:Label text="¥648" x="327.5" y="32" size="24" anchorOffsetX="0" width="93" textAlign="center" touchEnabled="false"/>
+	</e:Group>
+</e:Skin>

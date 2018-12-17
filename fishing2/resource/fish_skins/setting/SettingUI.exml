@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BagUI" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect width="1280" height="720" x="0" y="0" fillAlpha="0.7"/>
+	<e:Group id="root" width="1280" height="720" horizontalCenter="0" verticalCenter="0">
+		<e:Image scaleX="1" scaleY="1" horizontalCenter="9.5" source="common_panel_bg_png" fillMode="clip" scale9Grid="91,98,850,442" anchorOffsetY="0" y="48.52"/>
+		<e:Image fillMode="clip" anchorOffsetX="0" anchorOffsetY="0" source="setting_bg_png" x="158.58" y="123.52"/>
+		<e:Image id="title" source="SheZhi_png" horizontalCenter="1.5" verticalCenter="-270.5"/>
+		<e:Label id="infoTxt" text="lable" x="611" y="169" anchorOffsetX="0" width="467" anchorOffsetY="0" height="297" textAlign="left" multiline="true" size="24" fontFamily="黑体"/>
+		<e:Group id="contain" width="419" height="281" verticalCenter="-69.5" y="180.00000000000003" scaleX="1" scaleY="1" horizontalCenter="-255.5" anchorOffsetY="0" anchorOffsetX="0">
+			<e:Group id="groupMus" width="160" height="32" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="35.5" verticalCenter="-77.5">
+				<e:Image id="bg_1" scale9Grid="11,8,15,12" touchEnabled="false" source="setting_Guan_di_png" horizontalCenter="-0.5" verticalCenter="0" fillMode="clip"/>
+				<e:Image source="HuaKuai_png" id="icon0" verticalCenter="2.5" right="-5" touchEnabled="false" fillMode="clip"/>
+				<e:Image id="iconKai0" verticalCenter="0" source="Guai_png" left="24" touchEnabled="false" fillMode="clip"/>
+				<e:Group id="music_sel" width="160" height="32" x="0" y="0" touchEnabled="false" visible="false">
+					<e:Image x="0" scale9Grid="11,8,15,12" scaleX="1" scaleY="1" touchEnabled="false" verticalCenter="0" source="setting_Kai_di_png" fillMode="clip"/>
+					<e:Image id="icon" x="-11.99" source="HuaKuai_png" touchEnabled="false" verticalCenter="2.5" fillMode="clip"/>
+					<e:Image id="iconKai" source="Kai_png" right="24" verticalCenter="0" touchEnabled="false" fillMode="clip"/>
+				</e:Group>
+			</e:Group>
+			<e:Group id="groupSel" width="160" height="32" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="4.5" x="165">
+				<e:Image id="bg_2" scale9Grid="11,8,15,12" touchEnabled="false" source="setting_Guan_di_png" verticalCenter="0" horizontalCenter="-0.5" fillMode="clip"/>
+				<e:Image source="HuaKuai_png" id="icon1" verticalCenter="0" right="-5" touchEnabled="false" fillMode="clip"/>
+				<e:Image source="Guai_png" id="iconKai1" verticalCenter="0" left="24" touchEnabled="false" fillMode="clip"/>
+				<e:Group id="sound_sel" width="160" height="32" x="0" y="0" touchEnabled="false" visible="false">
+				<e:Image x="0" scale9Grid="11,8,15,12" scaleX="1" scaleY="1" touchEnabled="false" verticalCenter="0" source="setting_Kai_di_png" fillMode="clip"/>
+				<e:Image x="-11.99" source="HuaKuai_png" id="icon2" touchEnabled="false" verticalCenter="3.5" fillMode="clip"/>
+				<e:Image source="Kai_png" id="iconKai2" right="24" verticalCenter="0" touchEnabled="false" fillMode="clip"/>
+				</e:Group>
+			</e:Group>
+			<e:Group id="groupShake" width="160" height="32" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="90.5" x="165">
+				<e:Image id="bg_0" scale9Grid="11,8,15,12" touchEnabled="false" source="setting_Guan_di_png" verticalCenter="0" horizontalCenter="-0.5" fillMode="clip"/>
+				<e:Image source="HuaKuai_png" id="icon3" verticalCenter="0" right="-5" touchEnabled="false" fillMode="clip"/>
+				<e:Image source="Guai_png" id="iconKai3" verticalCenter="0" left="24" touchEnabled="false" fillMode="clip"/>
+				<e:Group id="shake" width="160" height="32" x="0" y="0" touchEnabled="false">
+				<e:Image x="0" scale9Grid="11,8,15,12" scaleX="1" scaleY="1" touchEnabled="false" verticalCenter="0" source="setting_Kai_di_png" fillMode="clip"/>
+				<e:Image x="-11.99" source="HuaKuai_png" id="icon4" touchEnabled="false" verticalCenter="3.5" fillMode="clip"/>
+				<e:Image source="Kai_png" id="iconKai4" right="24" verticalCenter="0" touchEnabled="false" fillMode="clip"/>
+				</e:Group>
+			</e:Group>
+			<e:Label text="音乐" x="69" y="46" size="32" bold="true" fontFamily="黑体" border="false" stroke="1" strokeColor="0x093c56"/>
+			<e:Label text="音效" x="69" y="130" size="32" bold="true" fontFamily="黑体" border="false" stroke="1" strokeColor="0x093C56"/>
+			<e:Label text="震动" x="68" y="213.5" size="32" bold="true" fontFamily="黑体" border="false" stroke="1" strokeColor="0x093C56"/>
+		</e:Group>
+		<e:Button id="closeBtn" label="" anchorOffsetX="31.5" anchorOffsetY="31.5" scaleX="1" scaleY="1" horizontalCenter="456" verticalCenter="-270.5">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_close_btn_png" source.down="common_close_btn_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group id="backBtn" width="157.33" height="54.67" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-199.5" verticalCenter="189.5">
+			<e:Button id="icon_change" label="" anchorOffsetY="27.06" anchorOffsetX="80" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="common_btn_long_n_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image fillMode="repeat" source="setting_cut_png" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="cutBtn" width="157.33" height="54.67" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="205.5" verticalCenter="191.5">
+			<e:Button id="icon_change0" label="" anchorOffsetY="27.06" anchorOffsetX="80" horizontalCenter="0" verticalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="duanzao_anniu_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image fillMode="clip" horizontalCenter="0" verticalCenter="0" source="setting_back_png"/>
+		</e:Group>
+		<e:Button id="weiguiBtn" label="" x="400" y="431">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="setting_gonggao_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="yinsiBtn" label="" horizontalCenter="-342.5" verticalCenter="98">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="setting_xieyi_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="版本号：" x="542" y="588.15" size="24" fontFamily="黑体" stroke="1" strokeColor="0x121065"/>
+		<e:Label id="versionTxt" text="V1.001" x="626" y="588.15" size="24" fontFamily="黑体" stroke="1" strokeColor="0x121065"/>
+	</e:Group>
+</e:Skin>

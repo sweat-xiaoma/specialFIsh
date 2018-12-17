@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ItemShopUI" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="16204c989ad"/>
+	<e:Rect width="1280" height="720" fillAlpha="0.5" horizontalCenter="0" verticalCenter="0" visible="false"/>
+	<e:Group x="116.47" y="80.00000000000001">
+		<e:Image x="0" y="0" source="s_shopTitle_png"/>
+		<e:Button id="closeBtn" label="" anchorOffsetX="0.5" anchorOffsetY="0.5" x="951.38" y="26.67">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_close_btn_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" xmlns:tween="egret.tween.*"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="gunBtn" label="" x="208.98" y="111.84">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="s_AnNiu1_1_png" source.down="s_AnNiu1_2_png" source.disabled="s_AnNiu1_2_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="itemBtn" label="" x="65.32" y="111.84">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="s_AnNiu2_1_png" source.down="s_AnNiu2_2_png" source.disabled="s_AnNiu2_2_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Scroller id="itemList_scroll" width="920" height="352" x="62.32" y="170" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyH="off">
+			<e:Group id="item_group" x="-8" anchorOffsetX="0" width="920.67">
+			</e:Group>
+		</e:Scroller>
+		<e:Image width="901.82" height="68.48" x="70.26" y="522.65" anchorOffsetX="0" anchorOffsetY="0" source="diban2_png"/>
+		<e:Image width="144" height="40" x="300.25" anchorOffsetX="0" anchorOffsetY="0" top="541" source="shuzidi_png"/>
+		<e:Image width="144" height="40" x="629.94" anchorOffsetX="0" anchorOffsetY="0" top="541" source="shuzidi_png"/>
+		<e:Label id="gold_txt" text="99999" x="310" y="553" anchorOffsetX="0" width="140.67" size="18"/>
+		<e:Label id="dou_txt" text="99999" x="640" y="553" anchorOffsetX="0" width="140.67" size="18"/>
+		<e:Image width="40" height="40" x="589.94" y="542" source="common_coins_png"/>
+		<e:Image width="40" height="40" x="260.25" y="541" source="common_diamond_png" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Group>
+</e:Skin>

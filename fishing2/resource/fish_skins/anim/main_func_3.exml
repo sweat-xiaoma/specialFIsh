@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="main_func_3" width="500" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="play">
+			<tween:TweenItem target="{ZhangYu_Dao}">
+				<tween:Set>
+					<tween:props>
+						<e:Object rotation="{-10}" x="{247.19}" y="{259.65}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object rotation="{3}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object rotation="{-10}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{GuangDian}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" y="{530.19}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{GuangDian0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" y="{589}" x="{319.33}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="200"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" x="{189.79}" y="{519}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{GuangDian1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" scaleX="{1}" scaleY="{1}" x="{318.01}" y="{408.33}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="350"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" x="{233.84}" y="{411.57}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{GuangDian2}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" x="{447}" y="{472}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="600"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" x="{327.67}" y="{438.33}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object alpha="{1}" x="{327.67}" y="{438.33}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{GuangDian3}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" y="{519}" x="{250}" scaleX="{1}" scaleY="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="600"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{238}" y="{527}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{Zhang_ShenTi_1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{85.65}" x="{200.41}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{banyan}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="650"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{209.84}" y="{204.44}" alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" rotation="{357.66}" y="{204.34}" x="{211.84}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{biyan}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{280}" y="{138.36}" alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="700"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}" rotation="{0.7}" x="{215.84}" y="{206.6}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="50"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+			<tween:TweenItem target="{guang}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}" x="{292.6}" y="{442.2}" scaleX="{0.5}" scaleY="{0.5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="350">
+					<tween:props>
+						<e:Object alpha="{1}" rotation="{0}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="200">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{qipao}">
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.5}" scaleY="{0.5}" x="{184}" y="{476}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1250">
+					<tween:props>
+						<e:Object alpha="{1}" y="{289.63}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0}" x="{183.91}" y="{134.88}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{qipao2}">
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{0.7}" scaleY="{0.7}" x="{144.57}" y="{452.9}" alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="900">
+					<tween:props>
+						<e:Object alpha="{1}" x="{139.15}" y="{324.11}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="450">
+					<tween:props>
+						<e:Object y="{151.38}" alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{qipao3}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="250"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object width="{29.56}" height="{31.47}" alpha="{1}" x="{177.43}" y="{594.8}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="850">
+				<tween:props>
+					<e:Object alpha="{0}" y="{324}" x="{172.66}" width="{37.49}" height="{39.91}"/>
+				</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{qipao4}">
+				<tween:Set>
+				<tween:props>
+					<e:Object x="{100.5}" y="{757.99}" width="{45}" height="{47.9}" alpha="{0}"/>
+				</tween:props>
+				</tween:Set>
+				<tween:Wait duration="150"/>
+				<tween:Set>
+				<tween:props>
+					<e:Object alpha="{1}" width="{36.46}" height="{38.81}" x="{121.42}" y="{556.47}"/>
+				</tween:props>
+				</tween:Set>
+				<tween:To duration="1350">
+				<tween:props>
+					<e:Object alpha="{0}" width="{33.99}" height="{36.17}" x="{122.4}" y="{264.82}"/>
+				</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{Zhang_R_Shou_1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object rotation="{-6}" y="{265.72}" x="{283.84}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object rotation="{0.71}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="750">
+					<tween:props>
+						<e:Object rotation="{-6}" x="{283.84}" y="{265.72}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image id="Zhang_R_Shou_1" source="Zhang_R_Shou_1_png" x="289.84" y="260.72" anchorOffsetX="6" anchorOffsetY="16" scaleX="1.2" scaleY="1.2"/>
+	<e:Image id="qipao2" source="bubble_png" x="177.69" y="459.6"/>
+	<e:Image id="qipao" source="bubble_png" x="146.69" y="523.1"/>
+	<e:Image id="Di" anchorOffsetX="0" anchorOffsetY="0" x="51.84" y="243.27" rotation="358.65" source="animfun_json.Di_fun3_png"/>
+	<e:Image id="ZhangYu_Dao" source="Zhang_R_Shou_2_png" scaleX="1.2" scaleY="1.2" rotation="356.08" x="242.19" y="256.65" anchorOffsetX="104" anchorOffsetY="91.32"/>
+	<e:Image id="GuangDian" width="26" height="43" y="671.1" source="ShanGuang_png" anchorOffsetX="13" anchorOffsetY="22.5" x="233.84" fillMode="clip"/>
+	<e:Image width="26" height="43" y="437.42" source="ShanGuang_png" anchorOffsetX="13" anchorOffsetY="22.5" id="GuangDian0" x="326.84" fillMode="clip"/>
+	<e:Image width="26" height="43" y="524.1" source="ShanGuang_png" anchorOffsetX="13" anchorOffsetY="22.5" id="GuangDian1" x="185.19"/>
+	<e:Image width="26" height="43" y="483.6" source="ShanGuang_png" anchorOffsetX="13" anchorOffsetY="22.5" id="GuangDian2" x="385.68" fillMode="repeat"/>
+	<e:Image width="26" height="43" y="515.1" source="ShanGuang_png" anchorOffsetX="13" anchorOffsetY="22.5" id="GuangDian3" x="303.84"/>
+	<e:Image id="Zhang_ShenTi_1" source="Zhang_ShenTi_1_png" rotation="0.43" x="200.41" y="77.65" scaleX="1.2" scaleY="1.2"/>
+	<e:Image id="banyan" source="banyan_png" x="207.84" y="200.44" rotation="351.52" scaleX="1.2" scaleY="1.2"/>
+	<e:Image id="biyan" source="biyan_png" x="213.52" y="200.71" rotation="358.3" scaleX="1.2" scaleY="1.2"/>
+	<e:Image id="guang" source="guang_3_png" x="263.05" y="421.92" anchorOffsetX="37" anchorOffsetY="37"/>
+	<e:Image id="qipao3" source="bubble_png" x="134.84" y="601.83" scaleX="0.6" scaleY="0.65"/>
+	<e:Image id="qipao4" source="bubble_png" x="88.34" y="539.6" scaleX="0.4" scaleY="0.4"/>
+	<e:Image x="108.34" y="452.1" source="room_high_png"/>
+	<e:Rect width="357" height="508" x="76" y="94" anchorOffsetX="0" anchorOffsetY="0" id="touchRect" fillAlpha="0.5" visible="false"/>
+</e:Skin>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="firstChargeUI" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="1280" height="720" x="0" y="0" fillAlpha="0.5"/>
+	<e:Group id="root" width="987" height="633" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="background_png" x="0" y="77.27"/>
+		<e:Image source="bg_firstCharge_png" x="16" y="53.98"/>
+		<e:Image source="title_png" x="-30.48" y="-47.5"/>
+		<e:Group id="banzi_1" width="251" height="133" x="392.7" y="211.11">
+			<e:Image id="bg" width="251" height="133" x="0" y="0" source="dise_firstCharge_png"/>
+			<e:Image id="icon" width="172" height="129" horizontalCenter="-40" verticalCenter="-16" source="charge_102_png"/>
+			<e:Image width="73" height="44" x="135" y="28" source="first_x5_png"/>
+			<e:Image width="211" height="20" y="98" source="first_JiuJi_png" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="banzi_2" width="251" height="133" x="655.7" y="211.11">
+			<e:Image width="251" height="133" x="0" y="0" id="bg0" source="dise_firstCharge_png"/>
+			<e:Image id="icon_1" width="172" height="129" horizontalCenter="-40" verticalCenter="-21" source="charge_103_png"/>
+			<e:Image width="72" height="43" x="147" y="28" source="first_x2_png"/>
+			<e:Image width="200" height="20" y="98" source="first_denl_png" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="chargeGroup" width="220" height="90" horizontalCenter="286.5" verticalCenter="220.5">
+			<e:Image source="duanzao_anniu_png" x="21.23" y="0" scaleX="1" scaleY="1"/>
+			<e:Image x="66.69" y="24.24" scaleX="1" scaleY="1" source="ChongZhibg_firstCharge_png"/>
+		</e:Group>
+		<e:Scroller id="itemScroller" width="495" height="150" x="406.65" y="351.95" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Group id="listGroup" width="151.06" height="150" y="16.67" anchorOffsetX="0">
+				<e:Image source="coomon_item_bg_png" x="8.48" y="39.24"/>
+				<e:Image source="coomon_item_bg_png" x="109.12" y="39.24"/>
+				<e:Image source="coomon_item_bg_png" x="209.12" y="39.24"/>
+				<e:Image source="coomon_item_bg_png" x="309.12" y="39.24"/>
+				<e:Image source="coomon_item_bg_png" x="408.47" y="39.24"/>
+			</e:Group>
+		</e:Scroller>
+		<e:Button id="btnClose" label="" horizontalCenter="440" verticalCenter="-245">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_close_btn_png" source.down="common_close_btn_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="首次充值任意金额        即可获得128元大礼包" x="324.09" y="136.7" textColor="0xffdb15"/>
+		<e:Image source="first_ShouChong_png" x="295.36" y="-11.06"/>
+		<e:Image source="du_png" x="65.42" y="143.85"/>
+	</e:Group>
+</e:Skin>

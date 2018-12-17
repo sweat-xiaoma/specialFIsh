@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BagUI" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="1280" height="720" x="0" y="0" fillAlpha="0.7"/>
+	<e:Group id="root" width="1280" height="720" horizontalCenter="1" verticalCenter="0" anchorOffsetX="640" anchorOffsetY="360">
+		<e:Group width="1004" height="616" x="153" y="67">
+			<e:Image width="1004" height="616" x="-6" y="-4" scaleX="1" scaleY="1" anchorOffsetY="0" fillMode="scale" source="common_panel_bg_png" scale9Grid="32,98,923,459"/>
+			<e:Image width="76" height="40" source="bag_title_png" x="466" y="13" scaleX="1" scaleY="1"/>
+			<e:Image width="964" height="545" x="15" y="68.82" source="dise01_png" fillMode="clip"/>
+			<e:Button id="closeBtn" label="" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="453.5" verticalCenter="-272">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="common_close_btn_png" source.down="common_close_btn_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="leftPanel" width="473" height="485" x="657" y="143" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image x="10" y="5.2" fillMode="clip" source="coomon_item_bg_png"/>
+			<e:Image id="itemTypeBgImg" width="167" height="29" source="describe_bg_png" anchorOffsetX="0" fillMode="scale" left="98" verticalCenter="-173" top="55" scale9Grid="12,12,22,21" anchorOffsetY="0"/>
+			<e:Image width="77" source="describe_bg_png" anchorOffsetX="0" fillMode="scale" left="16" verticalCenter="-168.5" top="61" scale9Grid="12,12,22,21" anchorOffsetY="0" height="26" visible="false"/>
+			<e:Group id="iconGroup" width="65" height="66" y="13.6" x="20.2" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Label id="itemNameTxt" text="紫水晶" x="102.68" y="16.5" width="282" textAlign="left" bold="true" size="28" anchorOffsetX="0" textColor="0xf0bf16" stroke="1" strokeColor="0x212121"/>
+			<e:Label id="itemTypeTxt" text="价格：99999" x="106" y="60.99" width="159" size="16" height="26" textAlign="left" bold="true" textColor="0xf0bf16" stroke="1" strokeColor="0x212121"/>
+			<e:Label id="itemCountTxt" text="99" x="16.4" y="62.1" width="71" size="20" height="12.8" anchorOffsetX="0" anchorOffsetY="0" textAlign="right" fontFamily="Arial" textColor="0xf0bf16" stroke="1" strokeColor="0x212121" bold="true"/>
+			<e:Label id="itemDesTxt" text="Labelfdfadfa  ldfadfadfadfadfdkjfalkjflajflkdjf" x="6.88" y="124.65" anchorOffsetX="0" width="451" anchorOffsetY="0" height="303" size="24" lineSpacing="5" locked="true"/>
+			<e:Image id="sellImg" x="4" source="tip_png" fillMode="scale" width="47" height="48" y="0"/>
+		</e:Group>
+		<e:Group id="rightPanel" width="445" height="429" x="187" y="143" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Scroller id="scroller" width="445" height="429" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Group id="scrollerGroup" anchorOffsetX="0" width="445" anchorOffsetY="0" height="429" x="12"/>
+			</e:Scroller>
+		</e:Group>
+		<e:Group width="473" height="56" x="651.42" y="589.07" anchorOffsetY="0" anchorOffsetX="0">
+			<e:Group id="useBtn" anchorOffsetX="60" anchorOffsetY="35" scaleX="1" scaleY="1" horizontalCenter="-148.5" verticalCenter="0">
+				<e:Image fillMode="clip" source="common_btn_blue_normal_png" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image horizontalCenter="0" source="shiyong_normal_png" y="5"/>
+			</e:Group>
+			<e:Group id="saleBtn" anchorOffsetX="60" anchorOffsetY="35" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+				<e:Image fillMode="clip" source="common_btn_blue_normal_png" left="0" top="0"/>
+				<e:Image source="chushou_normal_png" horizontalCenter="0.5" verticalCenter="-5"/>
+			</e:Group>
+			<e:Group id="splitBtn" width="120" height="70" y="32.58" x="237.4" anchorOffsetX="60" anchorOffsetY="35" scaleX="1" scaleY="1" visible="false">
+				<e:Image horizontalCenter="0" verticalCenter="0" fillMode="clip" source="common_btn_blue_normal_png"/>
+				<e:Image width="68" height="33" horizontalCenter="0" verticalCenter="-4" source="Char_FenJie_png"/>
+			</e:Group>
+			<e:Group id="sendBtn" anchorOffsetX="60" anchorOffsetY="35" scaleX="1" scaleY="1" horizontalCenter="158.5" verticalCenter="0">
+				<e:Image fillMode="clip" source="common_btn_blue_normal_png" left="0" top="0"/>
+				<e:Image source="zengsong_normal_png" horizontalCenter="0" y="5"/>
+			</e:Group>
+			<e:Group id="unloadBtn" anchorOffsetX="60" anchorOffsetY="35" scaleX="1" scaleY="1" verticalCenter="0" x="389" visible="false">
+				<e:Image fillMode="clip" source="common_btn_blue_normal_png" top="0" left="0"/>
+				<e:Image source="xiexia_normal_png" horizontalCenter="4" y="5"/>
+			</e:Group>
+			<e:Group id="equipBtn" width="120" height="48" anchorOffsetX="60" anchorOffsetY="35" scaleX="1" scaleY="1" horizontalCenter="152.5" verticalCenter="0" visible="false">
+				<e:Image fillMode="clip" source="common_btn_blue_normal_png" left="0" top="0"/>
+				<e:Image source="zhuangbei_normal_png" y="5" horizontalCenter="7"/>
+			</e:Group>
+			<e:Group id="renewBtn" width="120" height="70" anchorOffsetX="60" anchorOffsetY="35" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" visible="false">
+				<e:Image horizontalCenter="0" verticalCenter="0" source="common_btn_blue_normal_png"/>
+				<e:Image width="68" height="33" horizontalCenter="0" verticalCenter="-4" source="Char_XuFei_png"/>
+			</e:Group>
+		</e:Group>
+		<e:Group width="460" height="44" x="177.42" y="588.42" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image width="167" height="29" source="describe_bg_png" anchorOffsetX="0" fillMode="scale" scale9Grid="12,12,22,21" anchorOffsetY="0" x="43.58" y="14" scaleX="1" scaleY="1"/>
+			<e:Image width="167" height="29" source="describe_bg_png" anchorOffsetX="0" fillMode="scale" scale9Grid="12,12,22,21" anchorOffsetY="0" x="288.58" y="14" scaleX="1" scaleY="1"/>
+			<e:Image x="268.9" y="9.42" source="common_coins_png" fillMode="clip" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.7" scaleY="0.7"/>
+			<e:Image x="32.05" y="8.89" fillMode="clip" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.7" scaleY="0.7" source="common_diamond_png"/>
+			<e:Label id="moneyTxt" text="9999" x="60.75" y="18.33" width="143" size="18" height="20.67" textAlign="center" scaleX="1" scaleY="1" textColor="0xffffff" anchorOffsetX="0" anchorOffsetY="0" verticalAlign="middle" bold="true"/>
+			<e:Label id="goldTxt" text="9999" x="307.25" y="18.33" width="141.33" size="18" height="20.67" textAlign="center" bold="true" scaleX="1" scaleY="1" textColor="0xffffff" anchorOffsetX="0" verticalAlign="middle"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

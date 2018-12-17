@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="VipItem" width="722" height="365" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="root" width="722" height="365" x="0" y="0">
+		<e:Image source="huadongmokuai_png" x="0" y="0" locked="true"/>
+		<e:Image source="huadongshangtiao_png" x="272" y="30"/>
+		<e:Image source="bing (1)_png" x="7" y="6"/>
+		<e:Label text="Label" anchorOffsetX="0" width="328" left="306" verticalCenter="-75.5"/>
+		<e:Label text="Label" anchorOffsetX="0" width="328" x="306" y="160"/>
+		<e:Label text="Label" anchorOffsetX="0" width="328" x="306" y="227"/>
+		<e:Label text="Label" anchorOffsetX="0" width="328" left="306" verticalCenter="127.5"/>
+		<e:Image source="vip_TeQuan_lv_png" x="389.5" y="33"/>
+		<e:Group id="iconGroup" width="186" height="337" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-258" verticalCenter="-4"/>
+		<e:Group x="449" y="30" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image id="vip_lv_ico" x="0" y="0" source="v_0_png"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

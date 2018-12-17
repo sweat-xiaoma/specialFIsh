@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EmailItem" width="204" height="111" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg_default_Img" fillMode="clip" source="common_select_normal_png" left="0" top="0"/>
+	<e:Image id="bg_select_img" fillMode="clip" left="0" top="0" x="10" y="10" source="common_select_check_png" visible="false"/>
+	<e:Label id="emailNameLal" text="" x="14" y="20" anchorOffsetX="0" width="160" anchorOffsetY="0" height="68" textAlign="center" verticalAlign="middle" multiline="true"/>
+</e:Skin>

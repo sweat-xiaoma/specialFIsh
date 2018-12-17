@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="JbcUI" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.7"/>
+	<e:Group id="root" left="0" right="0" top="0" bottom="0">
+		<e:Image width="1003" height="640" source="common_panel_bg_png" scale9Grid="125,76,753,463" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image width="968" height="536" source="common_panel_di2_png" anchorOffsetX="0" horizontalCenter="-2" verticalCenter="26" anchorOffsetY="0" scale9Grid="29,62,63,378"/>
+		<e:Image source="jbc_title_png" verticalCenter="-282" horizontalCenter="0.5"/>
+		<e:Button id="closeBtn" label="" horizontalCenter="463" verticalCenter="-282.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_close_btn_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group id="btn_item_1" horizontalCenter="-352" verticalCenter="-168.5">
+			<e:Button id="btn_item_btn_1" label="" horizontalCenter="-9.5" verticalCenter="-1" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="common_select_normal_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="btn_item_icon_1" source="common_select_check_png" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image source="jbc_bt_0_png" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="btn_item_2" horizontalCenter="-352" verticalCenter="-44.5">
+			<e:Button id="btn_item_btn_2" label="" horizontalCenter="-9.5" verticalCenter="-1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_select_normal_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image id="btn_item_icon_2" source="common_select_check_png" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			<e:Image horizontalCenter="0" verticalCenter="0" source="jbc_bt_1_png"/>
+		</e:Group>
+		<e:Group id="btn_item_3" horizontalCenter="-352" verticalCenter="87.5">
+			<e:Button id="btn_item_btn_3" label="" horizontalCenter="-9.5" verticalCenter="-1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_select_normal_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image id="btn_item_icon_3" source="common_select_check_png" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			<e:Image horizontalCenter="0" verticalCenter="0" source="jbc_bt_2_png"/>
+		</e:Group>
+		<e:Group id="btn_item_4" horizontalCenter="-352" verticalCenter="211.5">
+			<e:Button id="btn_item_btn_4" label="" horizontalCenter="-9.5" verticalCenter="-1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_select_normal_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image id="btn_item_icon_4" source="common_select_check_png" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			<e:Image horizontalCenter="0" verticalCenter="0" source="jbc_bt_3_png"/>
+		</e:Group>
+		<e:Image source="jjc_time_bg_png" horizontalCenter="9.5" verticalCenter="-203" x="111" y="12" scaleX="1" scaleY="1"/>
+		<e:Label id="openTime" text="开放时间：8：00:00- 23:00:00" textColor="0x0bfb10" size="20" fontFamily="SimHei" bold="true" textAlign="center" verticalCenter="-205" horizontalCenter="6.5" x="190" y="23" scaleX="1" scaleY="1"/>
+		<e:Group id="moreRule" horizontalCenter="360" verticalCenter="-205" x="577" y="9" scaleX="1" scaleY="1">
+			<e:Button label="" horizontalCenter="0" verticalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn_blue_normal_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image source="jjc_btn_rule_png" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="panel1" width="708" height="452" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="118" verticalCenter="56" visible="false">
+			<e:Image x="243.03" y="16.67" source="jbc_shadow_png"/>
+			<e:Image x="308.03" y="7.67" source="jbc_cstj_png"/>
+			<e:Image x="19.03" y="47.42" source="jbc_di1_png"/>
+			<e:Label text="参赛等级：" x="68.44" y="76" size="18" fontFamily="SimHei" bold="true"/>
+			<e:Label id="txtLevel" text="5级以上" x="166.31" y="76" size="18" fontFamily="SimHei" bold="true"/>
+			<e:Label text="报名费用：" x="68.44" y="103" size="18" fontFamily="SimHei" bold="true"/>
+			<e:Label id="txtCost" text="20000金币" x="166.31" y="103" size="18" fontFamily="SimHei" bold="true"/>
+			<e:Label text="比赛时间：" x="68.44" y="130" size="18" fontFamily="SimHei" bold="true"/>
+			<e:Label id="txtTime" text="25分钟" x="166.31" y="130" size="18" fontFamily="SimHei" bold="true"/>
+			<e:Label text="比赛人数：" x="68.44" y="158" size="18" fontFamily="SimHei" bold="true"/>
+			<e:Label id="txtNum" text="4人" x="166.31" y="158" size="18" fontFamily="SimHei" bold="true"/>
+			<e:Image x="243.97" y="232.74" source="jbc_shadow_png"/>
+			<e:Image x="331.7" y="223.74" source="jbc_jl_png"/>
+			<e:Image x="19.03" y="263.52" source="jbc_di2_png"/>
+			<e:Label text="第一名：" x="68.44" y="292.08" size="18" fontFamily="SimHei" bold="true"/>
+			<e:Image id="award_icon1" x="136.58" y="273.52" source="common_coins_png"/>
+			<e:Label id="award_txt1" text="X1000" x="192.05" y="292.08" size="18" fontFamily="SimHei" bold="true" textColor="0x0bfb10"/>
+			<e:Label text="第二名：" x="470.26" y="292.08" size="18" fontFamily="SimHei" bold="true"/>
+			<e:Image id="award_icon2" x="528.4" y="273.52" source="common_coins_png"/>
+			<e:Label id="award_txt2" text="X1000" x="583.87" y="292.08" size="18" fontFamily="SimHei" bold="true" textColor="0x0BFB10"/>
+			<e:Label text="第三名：" x="68.44" y="336.91" size="18" fontFamily="SimHei" bold="true"/>
+			<e:Image id="award_icon3" x="136.58" y="318.35" source="common_coins_png"/>
+			<e:Label id="award_txt3" text="X1000" x="192.05" y="336.91" size="18" fontFamily="SimHei" bold="true" textColor="0x0BFB10"/>
+			<e:Label text="第四名：" x="470.26" y="336.91" size="18" fontFamily="SimHei" bold="true"/>
+			<e:Image id="award_icon4" x="528.4" y="318.35" source="common_coins_png"/>
+			<e:Label id="award_txt4" text="X1000" x="583.87" y="336.91" size="18" fontFamily="SimHei" bold="true" textColor="0x0BFB10"/>
+			<e:Group id="join" horizontalCenter="9" verticalCenter="196" x="587" y="19" scaleX="1" scaleY="1">
+				<e:Button label="" horizontalCenter="0" verticalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="common_btn_blue_normal_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Image horizontalCenter="0" verticalCenter="0" source="swc_btn_join_png"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="panel2" width="708" height="452" horizontalCenter="118" verticalCenter="56">
+			<e:Label text="已有" x="51.97" y="16" size="17" fontFamily="SimHei" bold="true"/>
+			<e:Label id="okNum" text="200" x="95.3" y="14.67" size="20" fontFamily="SimHei" bold="true" textColor="0x0bfb10" textAlign="center"/>
+			<e:Label text="人完成比赛，您当前排名第" x="137.97" y="16" size="17" fontFamily="SimHei" bold="true"/>
+			<e:Label id="rankNum" text="200" x="355.99" y="14.67" size="20" fontFamily="SimHei" bold="true" textColor="0x0BFB10" textAlign="center"/>
+			<e:Label text="，尚有" x="396.61" y="16" size="17" fontFamily="SimHei" bold="true"/>
+			<e:Label id="noNum" text="200" x="458.66" y="14.67" size="20" fontFamily="SimHei" bold="true" textColor="0x0BFB10" textAlign="center"/>
+			<e:Label text="人未完成比赛" x="499.94" y="16" size="17" fontFamily="SimHei" bold="true"/>
+			<e:Image source="common_panel_di2_png" anchorOffsetX="0" anchorOffsetY="0" height="342.91" x="9.09" y="46.97" width="690.16"/>
+			<e:Label text="排名" x="93.94" y="59" size="17" fontFamily="SimHei" bold="true"/>
+			<e:Label text="头像" x="246.94" y="59" size="17" fontFamily="SimHei" bold="true"/>
+			<e:Label text="名字" x="390.94" y="59" size="17" fontFamily="SimHei" bold="true"/>
+			<e:Label text="奖励" x="553.94" y="59" size="17" fontFamily="SimHei" bold="true"/>
+			<e:Image anchorOffsetX="0" anchorOffsetY="0" x="21.09" y="85.97" source="jbc_line_png" width="666"/>
+			<e:Group id="back" horizontalCenter="-13" verticalCenter="198" x="587" y="19" scaleX="1" scaleY="1">
+				<e:Button label="" horizontalCenter="0" verticalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="common_btn_blue_normal_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Label text="返回报名" size="22" fontFamily="SimHei" bold="true" horizontalCenter="0" verticalCenter="0" textAlign="center" textColor="0xaecdc9"/>
+				<e:Image source="jjc_btn_rule_png" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Group>
+			<e:Scroller width="654" height="283" x="28" y="92" anchorOffsetX="0" anchorOffsetY="0">
+				<e:Group id="list"/>
+			</e:Scroller>
+		</e:Group>
+	</e:Group>
+</e:Skin>

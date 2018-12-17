@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameFishing" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*">
+	<w:Declarations>
+	</w:Declarations>
+	<w:Config id="158bd74f443"/>
+	<e:Group id="posEff_0" width="1" height="1" x="333.94" y="641.47">
+	</e:Group>
+	<e:Group id="posEff_1" width="1" height="1" x="945.13" y="638.97">
+	</e:Group>
+	<e:Group id="posEff_2" width="1" height="1" x="334.25" y="82.61">
+	</e:Group>
+	<e:Group id="posEff_3" width="1" height="1" x="944.2" y="83.76">
+	</e:Group>
+	<e:Group id="posEff_4" width="1" height="1" x="355" y="556.25"/>
+	<e:Group id="posEff_5" width="1" height="1" x="930" y="555.6"/>
+	<e:Group id="posEff_6" width="1" height="1" x="355" y="133.1"/>
+	<e:Group id="posEff_7" width="1" height="1" x="930" y="133.1"/>
+	<e:Group id="group_0" width="398" height="109" x="98.68" bottom="-1" y="552" touchEnabled="false" touchChildren="true">
+		<e:Group x="45.84" y="-17.03" id="autoFire_btn0">
+			<e:Image source="gunBulletBtn_png" x="156.06" y="-4.67" scaleX="-1"/>
+			<e:Image id="autoFireImg0" source="zidong_png" x="18.68" y="20"/>
+			<e:Image id="stopAutoFireImg0" source="tingzhi_png" x="18.68" y="20"/>
+		</e:Group>
+		<e:Group id="gunRateGroup0" x="327.28" y="-2.81" anchorOffsetX="0" width="100" height="100">
+			<e:Group id="gunRateListGroup0" x="-18.56" y="0" width="87">
+				<e:Image id="gunRateListBg0" x="0" y="0" scale9Grid="10,7,66,10" source="dise_png"/>
+				<e:Scroller id="gunRateScroller0" width="100%" height="100%" x="0" y="4">
+					<e:List id="gunRateList0" width="86" x="0" y="0" itemRendererSkinName="GunRateListItemSkin"/>
+				</e:Scroller>
+			</e:Group>
+			<e:Group id="gunRateBtnGroup0" x="-22.32" y="-13" anchorOffsetX="0" width="137.42">
+				<e:Image x="-40.24" y="-4" scaleX="1" source="gunBulletBtn_png"/>
+				<e:Image source="chenghao_png" x="5.94" y="27.68"/>
+				<e:BitmapLabel id="gunRateLabel0" width="86" x="23.6" y="22.26" anchorOffsetX="0" font="small_num_font_fnt" text="10000" letterSpacing="-4" horizontalCenter="-10.709999999999994" textAlign="center"/>
+			</e:Group>
+		</e:Group>
+		<e:Image width="138" height="138" source="room_json.room_lv_quan" horizontalCenter="55" bottom="-17" visible="false"/>
+		<e:Group id="zuoGroup_0" horizontalCenter="54.5" bottom="31" width="1" height="1">
+			<e:Image id="zuo_0" source="pedestal_png" scaleY="1" scaleX="1" y="-97" x="-90"/>
+		</e:Group>
+		<e:Group id="groupGun_0" width="1" height="1" x="233.21" y="15.82"/>
+		<e:Group id="groupGun_0_1" width="1" height="1" x="222.97" y="60"/>
+		<e:Group id="groupGun_0_2" width="1" height="1" x="282.97" y="60"/>
+		<e:Group id="groupGun_0_3" width="1" height="1" x="252.97" y="60"/>
+		<e:Group id="cache_group_0" width="457" height="101" x="-96.68" y="12" scaleX="1" scaleY="1" touchEnabled="false">
+			<e:Image scaleX="1" scaleY="1" scale9Grid="21,0,57,36" touchEnabled="false" bottom="9" x="237" source="gunRateBg_png"/>
+			<e:Image scaleX="-1" scaleY="1" y="29.34" rotation="0" touchEnabled="false" pixelHitTest="true" x="202.28" source="moneyBg_png"/>
+			<e:Button id="reduceRateBtn_0" label="" scaleX="1" scaleY="1" horizontalCenter="29" verticalCenter="19.5" anchorOffsetX="29" anchorOffsetY="29">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="jianhao_png" source.down="jianhao_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="addRateBtn_0" label="" scaleX="1" scaleY="1" anchorOffsetX="29" anchorOffsetY="29" horizontalCenter="174.5" verticalCenter="19">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="jiahao_png" source.down="jiahao_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Group id="rateLab_0" width="1" height="1" horizontalCenter="102" verticalCenter="21" touchEnabled="false"/>
+			<e:Button id="addGoldBtn_0" label="" scaleX="1" scaleY="1" x="16.61" y="47.77" width="33" height="33" touchEnabled="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_coins_png" source.down="common_coins_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="addGemBtn_0" label="" x="5.58" scaleX="1" scaleY="1" y="62.25" width="33" height="33" touchEnabled="false" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_diamond_png" source.down="common_diamond_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Group id="qmsGroup_0" width="42.42" height="101" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+				<e:Image width="33" height="33" source="common_diamond_png" horizontalCenter="0" verticalCenter="27"/>
+				<e:Image width="34" height="15" horizontalCenter="0" verticalCenter="-20" source="ZiDanTou_png"/>
+				<e:Image width="34" height="15" source="ZiDanTou_png" horizontalCenter="0" verticalCenter="-3"/>
+			</e:Group>
+			<e:Group id="kssGroup_0" width="42.42" height="101" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+				<e:Image width="34" height="15" horizontalCenter="0" verticalCenter="-20" source="ZiDanTou_png" x="212" y="23" scaleX="1" scaleY="1"/>
+				<e:Image width="34" height="15" source="ZiDanTou_png" horizontalCenter="0" verticalCenter="-3" x="212" y="40" scaleX="1" scaleY="1"/>
+				<e:Image id="kssGem_0" width="33" height="33" source="common_diamond_png" horizontalCenter="0" verticalCenter="27"/>
+				<e:Image id="kssCup_0" width="33" height="33" horizontalCenter="0" verticalCenter="27" source="JiangBei_png"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="gold_eff_0" width="1" height="1" x="18.06" y="75.87" anchorOffsetX="1"/>
+		<e:Group id="goldLab_0" width="1" height="1" x="17.66" y="75.62" touchEnabled="false"/>
+		<e:Group id="gemLab_0" width="1" height="1" x="16.62" y="86.45" anchorOffsetX="2" touchEnabled="false" visible="false"/>
+	</e:Group>
+	<e:Image id="waiting_0" x="250.04" y="616.33" touchEnabled="false" source="waitJoin_png" visible="false"/>
+	<e:Group id="group_1" x="835.84" height="109" touchEnabled="false" touchChildren="true" bottom="-1">
+		<e:Group id="autoFire_btn1" x="-78.82" y="-17.72">
+			<e:Image source="gunBulletBtn_png" x="154.73" y="-3.23" scaleX="-1"/>
+			<e:Image id="autoFireImg1" x="20.68" y="21.38" source="zidong_png"/>
+			<e:Image id="stopAutoFireImg1" source="tingzhi_png" x="17.98" y="20.7"/>
+		</e:Group>
+		<e:Group id="gunRateGroup1" x="140.3" y="-1.52" anchorOffsetX="0" width="144.33">
+			<e:Group id="gunRateListGroup1" x="42.71" y="-3" width="87">
+				<e:Image id="gunRateListBg1" x="0" y="0" scale9Grid="10,7,66,9" anchorOffsetY="0" source="dise_png"/>
+				<e:Scroller id="gunRateScroller1" width="100%" height="100%" x="0" y="4">
+					<e:List id="gunRateList1" width="86" x="0" y="0" itemRendererSkinName="GunRateListItemSkin">
+						<e:ArrayCollection>
+						<e:Array>
+							<e:Object/>
+						</e:Array>
+						</e:ArrayCollection>
+					</e:List>
+				</e:Scroller>
+				
+			</e:Group>
+			<e:Group id="gunRateBtnGroup1" x="0" y="-17">
+				<e:Image x="0" y="-4.56" source="gunBulletBtn_png"/>
+				<e:BitmapLabel id="gunRateLabel1" width="86" x="54.32" y="21.97" font="small_num_font_fnt" text="100" letterSpacing="-4" anchorOffsetX="0" textAlign="center"/>
+				<e:Image source="chenghao_png" x="45.34" y="26.99"/>
+			</e:Group>
+		</e:Group>
+		<e:Image width="138" height="138" source="room_json.room_lv_quan" horizontalCenter="-131.5" bottom="-17" visible="false"/>
+		<e:Group id="zuoGroup_1" horizontalCenter="-94" bottom="33" width="1" height="1">
+			<e:Image id="zuo_4" source="pedestal_png" scaleY="1" scaleX="1" y="-98" x="-90"/>
+		</e:Group>
+		<e:Group id="groupGun_1" width="1" height="1" x="109.84" y="13.78"/>
+		<e:Group id="groupGun_1_1" width="1" height="1" x="60.13" y="60"/>
+		<e:Group id="groupGun_1_2" width="1" height="1" x="120.13" y="60"/>
+		<e:Group id="groupGun_1_3" width="1" height="1" x="90.13" y="60"/>
+		<e:Group id="cache_group_1" width="444" height="95" x="0.29" y="11.27" touchEnabled="false">
+			<e:Image scaleX="1" scaleY="1" x="12.56" touchEnabled="false" bottom="5" source="gunRateBg_png"/>
+			<e:Image scaleX="-1" scaleY="-1" x="241.57" y="28.83" touchEnabled="false" pixelHitTest="true" rotation="180" source="moneyBg_png"/>
+			<e:Button id="reduceRateBtn_1" label="" scaleX="1" scaleY="1" horizontalCenter="-185.5" verticalCenter="19.5" anchorOffsetX="29" anchorOffsetY="29">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="jianhao_png" source.down="jianhao_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="addRateBtn_1" label="" scaleX="1" scaleY="1" horizontalCenter="-45" verticalCenter="19" anchorOffsetX="29" anchorOffsetY="29">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="jiahao_png" source.down="jiahao_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Group id="rateLab_1" width="1" height="1" x="108.7" y="69.01" touchEnabled="false"/>
+			<e:Button id="addGoldBtn_1" label="" scaleX="1" scaleY="1" x="258.25" y="47.17" width="33" height="33" touchEnabled="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_coins_png" source.down="common_coins_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="addGemBtn_1" label="" x="250.15" scaleX="1" scaleY="1" y="52.92" width="33" height="33" touchEnabled="false" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_diamond_png" source.down="common_diamond_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Group id="qmsGroup_1" width="42.42" height="101" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="46" verticalCenter="-6" visible="false">
+				<e:Image width="33" height="33" source="common_diamond_png" horizontalCenter="0" verticalCenter="27"/>
+				<e:Image width="34" height="15" horizontalCenter="0" verticalCenter="-20" source="ZiDanTou_png"/>
+				<e:Image width="34" height="15" source="ZiDanTou_png" horizontalCenter="0" verticalCenter="-3"/>
+			</e:Group>
+			<e:Group id="kssGroup_1" width="42.42" height="101" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="47" verticalCenter="-3" visible="false">
+				<e:Image width="34" height="15" horizontalCenter="0" verticalCenter="-20" source="ZiDanTou_png" x="212" y="23" scaleX="1" scaleY="1"/>
+				<e:Image width="34" height="15" source="ZiDanTou_png" horizontalCenter="0" verticalCenter="-3" x="212" y="40" scaleX="1" scaleY="1"/>
+				<e:Image width="33" height="33" source="common_diamond_png" horizontalCenter="0" verticalCenter="27" id="kssGem_1"/>
+				<e:Image width="33" height="33" source="JiangBei_png" horizontalCenter="0" verticalCenter="27" id="kssCup_1"/>
+			</e:Group>
+		</e:Group>
+		<e:Group width="1" height="1" x="355.75" y="74.32" anchorOffsetX="1" id="gold_eff_1"/>
+		<e:Group id="goldLab_1" width="1" height="1" x="356.62" y="74.56" touchEnabled="false"/>
+		<e:Group id="gemLab_1" width="1" height="1" x="347.5" y="83.49" touchEnabled="false" visible="false"/>
+	</e:Group>
+	<e:Image id="waiting_1" x="896.6" y="611.79" touchEnabled="false" source="waitJoin_png" visible="false"/>
+	<e:Group id="group_2" width="398" height="109" x="65.44" bottom="611" y="562" touchEnabled="false" touchChildren="true">
+		<e:Group id="gunRateGroup2" x="313.58" y="49.27" anchorOffsetX="0" width="144.33" scaleX="1" scaleY="1" anchorOffsetY="0" height="85">
+			<e:Image x="-14.34" y="77.56" scaleY="-1" scaleX="1" source="gunBulletBtn_png"/>
+			<e:Image source="chenghao_png" x="31.33" y="35.86"/>
+			<e:BitmapLabel id="gunRateLabel2" width="86" x="39.3" y="30.17" font="small_num_font_fnt" text="10000" letterSpacing="-4" textAlign="center"/>
+		</e:Group>
+		<e:Image width="138" source="room_json.room_lv_quan" horizontalCenter="93" top="-17" height="138" visible="false"/>
+		<e:Group id="zuoGroup_2" width="1" horizontalCenter="68.5" top="25" height="1">
+			<e:Image id="zuo_1" source="pedestal_png" scaleY="1" scaleX="1" rotation="180" anchorOffsetX="84.5" anchorOffsetY="103" horizontalCenter="-0.5" top="22"/>
+		</e:Group>
+		<e:Group id="groupGun_2" width="1" height="1" x="268.23" y="93.34" anchorOffsetX="0"/>
+		<e:Group id="groupGun_2_1" width="1" height="1" x="260.98" y="46" anchorOffsetX="0"/>
+		<e:Group id="groupGun_2_2" width="1" height="1" x="320.98" y="46" anchorOffsetX="0"/>
+		<e:Group id="groupGun_2_3" width="1" height="1" x="290.98" y="46" anchorOffsetX="0"/>
+		<e:Group id="cache_group_2" width="456" height="113" x="-65.32" y="-2.66" anchorOffsetX="0" anchorOffsetY="0" touchThrough="false" touchEnabled="false">
+			<e:Image scaleX="1" scaleY="1" x="201.88" y="69.47" touchEnabled="false" pixelHitTest="true" rotation="180" source="moneyBg_png"/>
+			<e:Button id="addGoldBtn_2" label="" scaleX="1" scaleY="1" x="15.52" y="17.68" width="33" height="33" touchEnabled="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_coins_png" source.down="common_coins_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="addGemBtn_2" label="" x="8.93" scaleX="1" scaleY="1" y="50.1" width="33" height="33" touchEnabled="false" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_diamond_png" source.down="common_diamond_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image id="rateBg_2" scaleX="1" scaleY="1" horizontalCenter="106" x="265.31999999999994" touchEnabled="false" top="11" source="gunRateBg_png"/>
+			<e:Group id="rateLab_2" width="1" height="1" x="334.64" y="33.63" scaleX="1" scaleY="1" touchEnabled="false"/>
+			<e:Group id="qmsGroup_2" width="42.42" height="101" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-204" verticalCenter="-19" visible="false">
+				<e:Image width="33" height="33" source="common_diamond_png" horizontalCenter="0" verticalCenter="27"/>
+				<e:Image width="34" height="15" horizontalCenter="0" verticalCenter="-20" source="ZiDanTou_png"/>
+				<e:Image width="34" height="15" source="ZiDanTou_png" horizontalCenter="0" verticalCenter="-3"/>
+			</e:Group>
+			<e:Group id="kssGroup_2" width="42.42" height="101" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-202" verticalCenter="-21" visible="false">
+				<e:Image width="34" height="15" horizontalCenter="0" verticalCenter="-20" source="ZiDanTou_png" x="212" y="23" scaleX="1" scaleY="1"/>
+				<e:Image width="34" height="15" source="ZiDanTou_png" horizontalCenter="0" verticalCenter="-3" x="212" y="40" scaleX="1" scaleY="1"/>
+				<e:Image width="33" height="33" source="common_diamond_png" horizontalCenter="0" verticalCenter="27" id="kssGem_2"/>
+				<e:Image width="33" height="33" source="JiangBei_png" horizontalCenter="0" verticalCenter="27" id="kssCup_2"/>
+			</e:Group>
+		</e:Group>
+		<e:Group width="1" height="1" x="41.8" y="32.44" anchorOffsetX="1" id="gold_eff_2"/>
+		<e:Group id="gemLab_2" width="1" height="1" x="48.34" y="60.37" touchEnabled="false" visible="false"/>
+		<e:Group id="goldLab_2" width="1" height="1" x="51.19" y="32.82" touchEnabled="false"/>
+	</e:Group>
+	<e:Image id="waiting_2" x="255.03" y="27.85" touchEnabled="false" source="waitJoin_png" visible="false"/>
+	<e:Group id="group_3" width="398" height="109" x="829.8" bottom="611" y="572" touchEnabled="false" touchChildren="true">
+		<e:Group id="gunRateGroup3" x="145.77" y="51.27" anchorOffsetX="0" width="144.33" scaleY="1" anchorOffsetY="0" height="85">
+			<e:Image x="-2" y="77.56" scaleY="-1" scaleX="1" source="gunBulletBtn_png"/>
+			<e:BitmapLabel id="gunRateLabel3" x="53.98" y="30.33" font="small_num_font_fnt" text="10000" letterSpacing="-4" width="86" textAlign="center"/>
+			<e:Image source="chenghao_png" x="43.67" y="36.33"/>
+		</e:Group>
+		<e:Image width="138" source="room_json.room_lv_quan" horizontalCenter="-102.5" top="-17" height="138" visible="false"/>
+		<e:Group id="zuoGroup_3" width="1" horizontalCenter="-85.5" top="58" height="1">
+			<e:Image id="zuo_2" source="pedestal_png" scaleY="1" scaleX="1" rotation="180" anchorOffsetX="84.5" anchorOffsetY="103" top="-11" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="groupGun_3" width="1" height="1" x="113.68" y="93.48"/>
+		<e:Group id="groupGun_3_1" width="1" height="1" x="67" y="46"/>
+		<e:Group id="groupGun_3_2" width="1" height="1" x="127" y="46"/>
+		<e:Group id="groupGun_3_3" width="1" height="1" x="97" y="46"/>
+		<e:Group id="cache_group_3" width="449.33" height="94.67" x="0" y="-5" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false">
+			<e:Image id="moneyInfo_3" scaleX="-1" scaleY="1" x="247.91" y="72.35" touchEnabled="false" pixelHitTest="true" rotation="180" source="moneyBg_png"/>
+			<e:Image id="rateBg_3" scaleX="1" scaleY="1" horizontalCenter="-112.66499999999999" x="-1" touchEnabled="false" top="12" source="gunRateBg_png"/>
+			<e:Button id="addGoldBtn_3" label="" scaleX="1" scaleY="1" x="266.44" y="20.74" width="33" height="33" touchEnabled="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_coins_png" source.down="common_coins_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="addGemBtn_3" label="" x="253.75" scaleX="1" scaleY="1" y="51.19" width="33" height="33" touchEnabled="false" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_diamond_png" source.down="common_diamond_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Group id="rateLab_3" width="1" height="1" x="108.67" y="36.3" scaleX="1" scaleY="1" touchEnabled="false"/>
+			<e:Group id="qmsGroup_3" width="42.42" height="101" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="45.335" verticalCenter="-7.835" visible="false">
+				<e:Image width="33" height="33" source="common_diamond_png" horizontalCenter="0" verticalCenter="27"/>
+				<e:Image width="34" height="15" horizontalCenter="0" verticalCenter="-20" source="ZiDanTou_png"/>
+				<e:Image width="34" height="15" source="ZiDanTou_png" horizontalCenter="0" verticalCenter="-3"/>
+			</e:Group>
+			<e:Group id="kssGroup_3" width="42.42" height="101" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="46" verticalCenter="-9" visible="false">
+				<e:Image width="34" height="15" horizontalCenter="0" verticalCenter="-20" source="ZiDanTou_png" x="212" y="23" scaleX="1" scaleY="1"/>
+				<e:Image width="34" height="15" source="ZiDanTou_png" horizontalCenter="0" verticalCenter="-3" x="212" y="40" scaleX="1" scaleY="1"/>
+				<e:Image width="33" height="33" source="common_diamond_png" horizontalCenter="0" verticalCenter="27" id="kssGem_3"/>
+				<e:Image width="33" height="33" source="JiangBei_png" horizontalCenter="0" verticalCenter="27" id="kssCup_3"/>
+			</e:Group>
+		</e:Group>
+		<e:Group width="1" height="1" x="363.24" y="33.29" anchorOffsetX="1" id="gold_eff_3"/>
+		<e:Group id="goldLab_3" width="1" height="1" x="365.08" y="33.18" touchEnabled="false"/>
+		<e:Group id="gemLab_3" width="1" height="1" x="350.55" y="60.41" touchEnabled="false" visible="false"/>
+	</e:Group>
+	<e:Image id="waiting_3" x="886.12" y="28.84" touchEnabled="false" source="waitJoin_png" visible="false"/>
+	<e:Group id="effect_Gold" width="1" height="1" y="160.89" left="53" visible="false"/>
+	<e:Group id="effect_Arena" width="1" height="1" y="261.88" left="55" visible="false"/>
+	<e:Button id="getCoinsBtn" label="" width="96" height="96" anchorOffsetX="48" anchorOffsetY="48" horizontalCenter="-585" verticalCenter="-201" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="room_json.getCoinsBtn" source.down="room_json.getCoinsBtn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group id="shrinkGroup" width="323.45" height="96" x="1280" y="109.12" anchorOffsetX="0">
+		<e:Image width="278.28" anchorOffsetX="0.28" anchorOffsetY="0.5" rotation="0" verticalCenter="-3" x="87.75" source="toolBarBg_png" scale9Grid="43,0,31,80"/>
+		<e:Button id="backBtn" label="" scaleX="1" scaleY="1" anchorOffsetX="24" anchorOffsetY="33.5" horizontalCenter="85.275" verticalCenter="-1.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="exitBtn_png" source.down="exitBtn_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="bgMusicBtn" label="" anchorOffsetX="24.5" anchorOffsetY="34.5" horizontalCenter="-95.5" verticalCenter="1.5" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="room_json.bar_music" source.down="room_json.bar_music"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="soundEffectBtn" label="" anchorOffsetX="25" anchorOffsetY="33" horizontalCenter="-17" verticalCenter="0" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="room_json.bar_sound"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="shopBtn" label="" anchorOffsetX="25" anchorOffsetY="34" horizontalCenter="-171" verticalCenter="1" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="room_json.ShangCheng" source.down="room_json.ShangCheng"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="fishkindBtn" label="" horizontalCenter="8.275000000000006" anchorOffsetX="25.5" anchorOffsetY="33.5" verticalCenter="-3">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="fishKindBtn_png" source.down="fishKindBtn_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="sound_off" width="25" height="29" x="210" y="21" source="room_json.btn_off" touchEnabled="false" visible="false"/>
+		<e:Image id="music_off" width="25" height="29" x="294" y="21" source="room_json.btn_off" touchEnabled="false" visible="false"/>
+	</e:Group>
+	<e:Button id="shrinkBtn" label="" horizontalCenter="590.5" verticalCenter="-205.5" anchorOffsetX="40" anchorOffsetY="40">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="toolBtn_png" source.down="toolBtn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group id="unlockGunGroup" width="1" height="1" verticalCenter="61.5" anchorOffsetX="0" anchorOffsetY="0.5" x="2.49">
+	</e:Group>
+	<e:Group id="lotteryGroup" anchorOffsetY="0" scaleY="1" scaleX="1" x="-272" verticalCenter="3" anchorOffsetX="0">
+		<e:Image left="0" verticalCenter="-1" anchorOffsetY="0.5" source="lotteryBg_png"/>
+		<e:Image id="jjy_txt_bg" width="120" source="labelBg_png" scale9Grid="22,0,73,36" anchorOffsetX="0" x="127" y="15"/>
+		<e:Image width="120" source="labelBg_png" scale9Grid="24,0,71,36" anchorOffsetX="0" x="127" y="50"/>
+		<e:BitmapLabel id="fishCountTxt" width="106.67" height="22.83" x="133.5" y="23.5" anchorOffsetX="0" anchorOffsetY="0" textAlign="center" text="10/10" letterSpacing="-2" font="mini_num_font_fnt"/>
+		<e:BitmapLabel id="bounsTxt" width="110.14" height="22.33" x="132.53" y="58.06" anchorOffsetX="0" anchorOffsetY="0" text="1234560" letterSpacing="-2" textAlign="center" font="mini_num_font_fnt"/>
+		<e:Group id="fishCountGroup" width="1" height="1" x="219" y="31"/>
+		<e:Group id="bounsGroup" width="1" height="1" x="219" y="68"/>
+		<e:Image id="lottery_tips" source="dianjicj_png" x="87" y="16"/>
+		<e:Image x="78" y="51.5" source="jiangjin_png"/>
+		<e:Image id="jiangjinyu_txt" source="shuliang_png" x="78" y="18.5"/>
+	</e:Group>
+	<e:Group id="exchangeGroup" width="295" height="104" anchorOffsetY="0" scaleY="1" scaleX="1" x="0" verticalCenter="-99" visible="false">
+		<e:Image width="295" height="114" source="room_json.message_bg" left="0" verticalCenter="-1" anchorOffsetY="0.5"/>
+		<e:Image width="188" height="36" source="room_json.message_txt_bg" scale9Grid="17,0,31,30" horizontalCenter="38.5" verticalCenter="16"/>
+		<e:Group id="exchangeNum" width="1" height="1" x="188.68" y="66.48"/>
+		<e:Label id="exchangeName" text="Label" horizontalCenter="39.5" verticalCenter="-25" textAlign="center" size="27"/>
+	</e:Group>
+	<e:Button id="unlockBtn" label="" width="67" height="74" anchorOffsetX="33" anchorOffsetY="37" scaleX="1" scaleY="1" horizontalCenter="-584.5" verticalCenter="110" visible="false">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="room_json.unlockGunBtn" source.down="room_json.unlockGunBtn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="trumpetBtn" label="" x="54.62" y="566.64" anchorOffsetX="33" anchorOffsetY="37" width="67" height="74" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="room_json.HanHua_Icon" source.down="room_json.HanHua_Icon"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="bossBtn" label="" width="92" height="78" anchorOffsetX="46" anchorOffsetY="39" scaleX="1" scaleY="1" horizontalCenter="-585" verticalCenter="110" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="room_json.ShiJieBoss_1" source.down="room_json.ShiJieBoss_1"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="lotteryBtn" label="" anchorOffsetX="48" anchorOffsetY="48" scaleX="1" scaleY="1" horizontalCenter="-585" verticalCenter="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="lotteryBtn_png" source.down="lotteryBtn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="exchangeBtn" label="" width="80" height="85" anchorOffsetX="40" anchorOffsetY="42.5" scaleX="1" scaleY="1" horizontalCenter="-585" verticalCenter="-97.5" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="room_json.arenaBtn" source.down="room_json.arenaBtn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group id="warGroupPos" width="1" height="1" verticalCenter="201.5" anchorOffsetY="0.5" right="-368"/>
+	<e:Button id="openWarHeadBtn" label="" x="1234.66" y="561.28" width="77" height="77" anchorOffsetX="38.5" anchorOffsetY="38.5">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="room_json.warheadBtn" source.down="room_json.warheadBtn" source.disabled="room_json.warheadBtn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group id="pos_0" width="5" height="5" x="331.25" y="594.45" touchEnabled="false"/>
+	<e:Group id="pos_1" width="5" height="5" x="944.07" y="591.82" touchEnabled="false"/>
+	<e:Group id="pos_2" width="5" height="5" x="333.35" y="8.24" touchEnabled="false"/>
+	<e:Group id="pos_3" width="5" height="5" x="923.26" y="12.98" touchEnabled="false"/>
+	<e:Group id="exchange_0" width="1" height="1" touchEnabled="false" y="540" x="350" visible="false">
+		<e:Image width="122" height="35" source="room_json.DuiJiangZhong" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Group id="exchange_1" width="5" height="5" x="922.83" y="540" touchEnabled="false" visible="false">
+		<e:Image width="122" height="35" source="room_json.DuiJiangZhong" horizontalCenter="0" verticalCenter="0" x="-343.83000000000004" y="-197" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="exchange_2" width="5" height="5" x="355" y="180" touchEnabled="false" visible="false">
+		<e:Image width="122" height="35" source="room_json.DuiJiangZhong" horizontalCenter="0" verticalCenter="0" x="509.83000000000004" y="345" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="exchange_3" width="5" height="5" x="923" y="180" touchEnabled="false" visible="false">
+		<e:Image width="122" height="35" source="room_json.DuiJiangZhong" horizontalCenter="0" verticalCenter="0" x="-344" y="163" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="guideTaskGroup" width="1" height="1" horizontalCenter="0.5" top="0"/>
+	<e:Group id="bossTopGroup" width="1" height="1" horizontalCenter="0.5" top="0"/>
+	<e:Group id="shieldGroup" width="1" height="1" horizontalCenter="0" top="195"/>
+	<e:Group id="ciriGroup" width="1" height="1" x="116.92" y="115.16" scaleX="0.7" scaleY="0.7">
+	</e:Group>
+	<e:Group id="DjsGroup" width="1280" height="720" x="0" y="0" touchEnabled="false" visible="false">
+		<e:Group id="DjsScore_0" width="134" height="32" anchorOffsetX="0" anchorOffsetY="0" bottom="83" left="8">
+			<e:Image width="152" height="40" source="Djs_json.PaiMingJiFen" horizontalCenter="0" verticalCenter="0" scale9Grid="21,14,3,2"/>
+			<e:Image width="36" height="20" source="Djs_json.Djs_JiFen" verticalCenter="-1" horizontalCenter="-45"/>
+			<e:Image width="90" height="28" source="Djs_json.PaiMingJiFen_1" scale9Grid="7,8,11,11" horizontalCenter="19.5" verticalCenter="-1"/>
+			<e:BitmapLabel id="DjsScoreLab_0" width="90" height="17" x="45" y="6" anchorOffsetX="0" anchorOffsetY="0" text="99999" font="bitmapNum_4_fnt"/>
+		</e:Group>
+		<e:Group height="32" anchorOffsetX="0" anchorOffsetY="0" id="DjsScore_1" bottom="83" right="8" width="134">
+			<e:Image width="152" height="40" source="Djs_json.PaiMingJiFen" horizontalCenter="0" verticalCenter="0" scale9Grid="21,14,3,2"/>
+			<e:Image width="36" height="20" source="Djs_json.Djs_JiFen" verticalCenter="-1" horizontalCenter="-43"/>
+			<e:Image width="90" height="28" source="Djs_json.PaiMingJiFen_1" scale9Grid="7,8,11,11" horizontalCenter="19.5" verticalCenter="-1" x="-1088" y="1" scaleX="1" scaleY="1"/>
+			<e:BitmapLabel width="90" height="17" x="45" y="6" anchorOffsetX="0" anchorOffsetY="0" text="99999" font="bitmapNum_4_fnt" id="DjsScoreLab_1"/>
+		</e:Group>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" id="DjsScore_2" left="8" top="83" width="134" height="32">
+			<e:Image width="152" height="40" source="Djs_json.PaiMingJiFen" horizontalCenter="0" verticalCenter="0" scale9Grid="20,14,5,2"/>
+			<e:Image width="36" height="20" source="Djs_json.Djs_JiFen" verticalCenter="-1" horizontalCenter="-43"/>
+			<e:Image width="90" height="28" source="Djs_json.PaiMingJiFen_1" scale9Grid="7,8,11,11" horizontalCenter="19.5" verticalCenter="-1" x="1172" y="523" scaleX="1" scaleY="1"/>
+			<e:BitmapLabel width="90" height="17" x="45" y="6" anchorOffsetX="0" anchorOffsetY="0" text="99999" font="bitmapNum_4_fnt" id="DjsScoreLab_2"/>
+		</e:Group>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" id="DjsScore_3" top="83" height="32" right="8" width="134">
+			<e:Image width="152" height="40" source="Djs_json.PaiMingJiFen" horizontalCenter="0" verticalCenter="0" scale9Grid="23,14,1,3"/>
+			<e:Image width="36" height="20" source="Djs_json.Djs_JiFen" verticalCenter="-1" horizontalCenter="-43"/>
+			<e:Image width="90" height="28" source="Djs_json.PaiMingJiFen_1" scale9Grid="7,8,11,11" horizontalCenter="19.5" verticalCenter="-1" x="1182" y="533" scaleX="1" scaleY="1"/>
+			<e:BitmapLabel width="90" height="17" x="45" y="6" anchorOffsetX="0" anchorOffsetY="0" text="99999" font="bitmapNum_4_fnt" id="DjsScoreLab_3"/>
+		</e:Group>
+		<e:Group id="myScoreGroup" width="264" height="110" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" bottom="120" scaleX="0.9" scaleY="0.9">
+			<e:Image width="264" height="49" source="Djs_json.PaiMingJiFen" horizontalCenter="0" top="63" scale9Grid="19,10,9,7"/>
+			<e:Image width="85" height="23" source="Djs_json.PaiMingJiFen_zi" top="76" horizontalCenter="-73.5"/>
+			<e:Image width="142" height="42" source="Djs_json.PaiMingJiFen_1" scale9Grid="7,8,11,11" horizontalCenter="54" verticalCenter="32"/>
+			<e:BitmapLabel id="rankScoreLab" width="140" height="35.15" anchorOffsetX="70" anchorOffsetY="17.5" font="rankNum_fnt" text="99999" horizontalCenter="61" verticalCenter="33.5" scaleX="1" scaleY="1"/>
+			<e:Group id="scoreTipsAdd" width="136" height="44" x="268" y="64.89" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+				<e:Image source="bitmap2Add_png" x="3" y="10" scaleX="0.5" scaleY="0.5"/>
+				<e:BitmapLabel id="scoreTips" width="200" height="50" anchorOffsetX="0" anchorOffsetY="0" text="100" scaleX="0.5" scaleY="0.5" x="27" y="10" font="number_fnt"/>
+			</e:Group>
+			<e:Group id="Djs" width="264" height="110" x="0" y="-49.55" scaleX="1" scaleY="1">
+				<e:Image width="264" height="49" source="Djs_json.PaiMingJiFen" horizontalCenter="0" x="0" bottom="0" y="61" scaleX="1" scaleY="1" scale9Grid="20,14,5,3"/>
+				<e:Image width="106" height="24" horizontalCenter="-74" source="Djs_json.TiaoZhanZiDanShu" bottom="13" x="11" y="73" scaleX="1" scaleY="1"/>
+				<e:Image width="142" height="42" source="Djs_json.PaiMingJiFen_1" scale9Grid="7,8,11,11" horizontalCenter="54" verticalCenter="30" x="115" y="3" scaleX="1" scaleY="1"/>
+				<e:BitmapLabel id="bulletNumLab" width="140" height="35.15" anchorOffsetX="70" anchorOffsetY="18.5" font="rankNum_fnt" text="99999" scaleX="1" scaleY="1" verticalCenter="33" horizontalCenter="61"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="DjsTaskGroup" width="260" height="140" horizontalCenter="0" top="0">
+			<e:Image width="260" height="137" source="Djs_json.RenWuDiWen" horizontalCenter="0" verticalCenter="0"/>
+			<e:Label id="taskTimeLab" text="99:99" x="49" size="24" textAlign="center" verticalCenter="-40.5"/>
+			<e:Group id="gain_0" width="1" height="1" horizontalCenter="28.5" verticalCenter="-31.5"/>
+			<e:Group width="1" height="1" id="gain_1" horizontalCenter="29.5" verticalCenter="0"/>
+			<e:Group width="1" height="1" id="gain_2" horizontalCenter="29.5" verticalCenter="31.5"/>
+			<e:Label id="gainNumLab_0" text="99/99" verticalCenter="-31.5" horizontalCenter="81" textAlign="center" size="19"/>
+			<e:Label text="99/99" id="gainNumLab_1" verticalCenter="0" horizontalCenter="81" textAlign="center" size="19"/>
+			<e:Label text="99/99" id="gainNumLab_2" verticalCenter="31.5" horizontalCenter="81" textAlign="center" size="19"/>
+			<e:Label id="scoreGainLab" text="积分:999" anchorOffsetX="0" width="107" anchorOffsetY="0" height="24" size="25" horizontalCenter="-59.5" verticalCenter="30" textAlign="center"/>
+		</e:Group>
+		<e:Group id="djsEffectGroup" width="1" height="1" horizontalCenter="-584" verticalCenter="33"/>
+		<e:Button id="DjsBtn" label="" horizontalCenter="-584" verticalCenter="33">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="room_json.BaoMing" source.down="room_json.BaoMing"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Group id="KssGroup" width="1280" height="720" x="0" y="0" touchEnabled="false" visible="false">
+		<e:Group id="KssUI" width="180" height="370" left="1" y="149">
+			<e:Image width="190" height="370" source="common_panel_big_bg_png" scale9Grid="34,187,11,308" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image width="188" height="342" source="LanDi_png" horizontalCenter="0" verticalCenter="0" scale9Grid="22,21,84,47" visible="false"/>
+			<e:Image width="186" height="52" source="Kss_banzi_png" scale9Grid="24,0,0,52" horizontalCenter="0" top="0"/>
+			<e:Image width="176" height="48" source="DuiHuanShuoMing_DiBan_png" bottom="6" horizontalCenter="0.5" scale9Grid="26,10,4,51"/>
+			<e:Image width="94" height="28" source="Kss_json.KssUI_paimingjifen" horizontalCenter="0" top="12" scaleX="1" scaleY="1"/>
+			<e:Image width="23" height="23" source="Kss_json.KssUI_shalou" horizontalCenter="-55" verticalCenter="158" scaleX="1.2" scaleY="1.2"/>
+			<e:Label id="timeLab" text="99:99" horizontalCenter="6" verticalCenter="157" textAlign="center" textColor="0xffff00"/>
+			<e:Label id="rankLab" text="9/9" textAlign="center" horizontalCenter="0" top="54" textColor="0xffff00"/>
+			<e:Group width="172" height="222.67" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="10.5">
+				<e:Group id="kss_0" width="170" height="50" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="-90">
+					<e:Image id="bg_0" width="140" height="40" source="Kss_json.KssUI_JiFen" horizontalCenter="-3" verticalCenter="0"/>
+					<e:Image id="sel_0" width="157" height="60" verticalCenter="0" horizontalCenter="-3" source="s_Gou_select_png" scale9Grid="37,27,226,167"/>
+					<e:Image id="cur_0" width="140" height="40" source="Kss_json.KssUI_jiFen01" verticalCenter="0" left="12"/>
+					<e:Image width="60" height="57" verticalCenter="0" left="0" source="rank_Di_1_png"/>
+					<e:Label id="rank_0" text="1" textAlign="center" left="14" verticalCenter="0" visible="false"/>
+					<e:Label id="kssScore_0" text="99999" anchorOffsetX="0" width="106" textAlign="center" horizontalCenter="17" verticalCenter="2" stroke="1"/>
+				</e:Group>
+				<e:Group width="170" height="50" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="-30" id="kss_1">
+					<e:Image width="140" height="40" id="bg_1" source="Kss_json.KssUI_JiFen" horizontalCenter="-3" verticalCenter="0"/>
+					<e:Image width="160" height="60" id="sel_1" verticalCenter="0" horizontalCenter="-3" source="s_Gou_select_png" scale9Grid="37,27,226,167"/>
+					<e:Image width="140" height="40" id="cur_1" source="Kss_json.KssUI_jiFen01" verticalCenter="0" left="12"/>
+					<e:Image width="60" height="57" verticalCenter="0" left="0" source="Di_2_png"/>
+					<e:Label text="2" id="rank_1" textAlign="center" left="14" verticalCenter="0" visible="false"/>
+					<e:Label text="99999" anchorOffsetX="0" width="106" id="kssScore_1" textAlign="center" horizontalCenter="17" verticalCenter="2" stroke="1"/>
+				</e:Group>
+				<e:Group width="170" height="50" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="30" id="kss_2">
+					<e:Image width="140" height="40" id="bg_2" source="Kss_json.KssUI_JiFen" horizontalCenter="-3" verticalCenter="0"/>
+					<e:Image width="160" height="60" id="sel_2" verticalCenter="0" horizontalCenter="-3" source="s_Gou_select_png" scale9Grid="37,27,226,167"/>
+					<e:Image width="140" height="40" id="cur_2" source="Kss_json.KssUI_jiFen01" verticalCenter="0" left="12"/>
+					<e:Image width="60" height="57" verticalCenter="0" left="0" source="rank_Di_3_png"/>
+					<e:Label text="3" id="rank_2" textAlign="center" left="14" verticalCenter="0" visible="false"/>
+					<e:Label text="99999" anchorOffsetX="0" width="106" id="kssScore_2" textAlign="center" horizontalCenter="17" verticalCenter="2" stroke="1"/>
+				</e:Group>
+				<e:Group width="170" height="50" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="90" id="kss_3">
+					<e:Image width="140" height="40" id="bg_3" source="Kss_json.KssUI_JiFen" horizontalCenter="-3" verticalCenter="0"/>
+					<e:Image width="160" height="60" id="sel_3" verticalCenter="0" horizontalCenter="-3" source="s_Gou_select_png" scale9Grid="37,27,226,167"/>
+					<e:Image width="140" height="40" id="cur_3" source="Kss_json.KssUI_jiFen01" verticalCenter="0" left="12"/>
+					<e:Label text="8" id="rank_3" textAlign="center" left="24" verticalCenter="0" stroke="1"/>
+					<e:Label text="99999" anchorOffsetX="0" width="106" id="kssScore_3" textAlign="center" horizontalCenter="17" verticalCenter="2" stroke="1"/>
+				</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Image width="407" height="149" source="ChangCiDiKuang_png" horizontalCenter="0.5" top="-64"/>
+		<e:Image id="img_0" width="190" height="69" source="MianFeiChang_png" horizontalCenter="0" top="0"/>
+		<e:Image id="img_1" width="190" height="69" horizontalCenter="0" top="0" source="ChuJiChang2_png"/>
+		<e:Image id="img_2" width="190" height="69" horizontalCenter="0" top="0" source="KssWait_ZhongJiCHng_png"/>
+		<e:Image id="img_3" width="190" height="69" horizontalCenter="0" top="0" source="jingyingchang_png"/>
+	</e:Group>
+</e:Skin>

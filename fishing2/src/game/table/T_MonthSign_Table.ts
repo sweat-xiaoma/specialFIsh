@@ -1,0 +1,301 @@
+// 签到
+class T_MonthSign {
+    public id = 0;
+    public type = 0;  // 1：每日  2：累计
+    public day = 0;
+    public week = 0;
+    public award = "";
+}
+
+class T_MonthSign_Table{
+    public static getVoByKey = function(t) {
+        var i = MonthSign_Table.length,
+        a = SerchUtil.binary_search(MonthSign_Table, "id", 0, i, t);
+        return <T_MonthSign>a
+    }
+    public static getAllVo = function() {
+        return MonthSign_Table
+    }
+}
+
+ var MonthSign_Table = [
+{
+	id:1,
+	type:1,
+	day:1,
+	week:1,
+	award:"10012_100"
+},
+{
+	id:2,
+	type:1,
+	day:2,
+	week:1,
+	award:"10012_100"
+},
+{
+	id:3,
+	type:1,
+	day:3,
+	week:1,
+	award:"10012_100"
+},
+{
+	id:4,
+	type:1,
+	day:4,
+	week:1,
+	award:"10012_100"
+},
+{
+	id:5,
+	type:1,
+	day:5,
+	week:1,
+	award:"10002_50"
+},
+{
+	id:6,
+	type:1,
+	day:6,
+	week:1,
+	award:"10002_50"
+},
+{
+	id:7,
+	type:1,
+	day:7,
+	week:1,
+	award:"10012_10"
+},
+{
+	id:8,
+	type:2,
+	day:3,
+	week:1,
+	award:"10012_10"
+},
+{
+	id:9,
+	type:2,
+	day:5,
+	week:1,
+	award:"10012_10"
+},
+{
+	id:10,
+	type:2,
+	day:7,
+	week:1,
+	award:"10012_10"
+},
+{
+	id:11,
+	type:1,
+	day:1,
+	week:2,
+	award:"10012_100"
+},
+{
+	id:12,
+	type:1,
+	day:2,
+	week:2,
+	award:"10012_100"
+},
+{
+	id:13,
+	type:1,
+	day:3,
+	week:2,
+	award:"10012_100"
+},
+{
+	id:14,
+	type:1,
+	day:4,
+	week:2,
+	award:"10012_100"
+},
+{
+	id:15,
+	type:1,
+	day:5,
+	week:2,
+	award:"10002_50"
+},
+{
+	id:16,
+	type:1,
+	day:6,
+	week:2,
+	award:"10002_50"
+},
+{
+	id:17,
+	type:1,
+	day:7,
+	week:2,
+	award:"10012_10"
+},
+{
+	id:18,
+	type:2,
+	day:3,
+	week:2,
+	award:"10012_10"
+},
+{
+	id:19,
+	type:2,
+	day:5,
+	week:2,
+	award:"10012_10"
+},
+{
+	id:20,
+	type:2,
+	day:7,
+	week:2,
+	award:"10012_10"
+},
+{
+	id:21,
+	type:1,
+	day:1,
+	week:3,
+	award:"10012_100"
+},
+{
+	id:22,
+	type:1,
+	day:2,
+	week:3,
+	award:"10012_100"
+},
+{
+	id:23,
+	type:1,
+	day:3,
+	week:3,
+	award:"10012_100"
+},
+{
+	id:24,
+	type:1,
+	day:4,
+	week:3,
+	award:"10012_100"
+},
+{
+	id:25,
+	type:1,
+	day:5,
+	week:3,
+	award:"10002_50"
+},
+{
+	id:26,
+	type:1,
+	day:6,
+	week:3,
+	award:"10002_50"
+},
+{
+	id:27,
+	type:1,
+	day:7,
+	week:3,
+	award:"10012_10"
+},
+{
+	id:28,
+	type:2,
+	day:3,
+	week:3,
+	award:"10012_10"
+},
+{
+	id:29,
+	type:2,
+	day:5,
+	week:3,
+	award:"10012_10"
+},
+{
+	id:30,
+	type:2,
+	day:7,
+	week:3,
+	award:"10012_10"
+},
+{
+	id:31,
+	type:1,
+	day:1,
+	week:4,
+	award:"10012_100"
+},
+{
+	id:32,
+	type:1,
+	day:2,
+	week:4,
+	award:"10012_100"
+},
+{
+	id:33,
+	type:1,
+	day:3,
+	week:4,
+	award:"10012_100"
+},
+{
+	id:34,
+	type:1,
+	day:4,
+	week:4,
+	award:"10012_100"
+},
+{
+	id:35,
+	type:1,
+	day:5,
+	week:4,
+	award:"10002_50"
+},
+{
+	id:36,
+	type:1,
+	day:6,
+	week:4,
+	award:"10002_50"
+},
+{
+	id:37,
+	type:1,
+	day:7,
+	week:4,
+	award:"10012_10"
+},
+{
+	id:38,
+	type:2,
+	day:3,
+	week:4,
+	award:"10012_10"
+},
+{
+	id:39,
+	type:2,
+	day:5,
+	week:4,
+	award:"10012_10"
+},
+{
+	id:40,
+	type:2,
+	day:7,
+	week:4,
+	award:"10012_10"
+}]

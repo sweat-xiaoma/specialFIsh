@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="NoticeUI" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="1280" height="720" x="0" y="0" fillAlpha="0.7"/>
+	<e:Group width="100%" height="100%">
+		<e:Image id="titleBg" width="1003" height="607" horizontalCenter="0" top="52" source="common_panel_bg_png" fillMode="scale" scale9Grid="444,115,97,426" anchorOffsetY="0" x="139" y="52" scaleX="1" scaleY="1"/>
+		<e:Image width="976" height="511" horizontalCenter="0" verticalCenter="21.5" source="common_panel_di2_png" scale9Grid="26,10,60,443" anchorOffsetX="0" anchorOffsetY="0" x="152" y="126" scaleX="1" scaleY="1"/>
+		<e:Group id="root" width="1280" height="720" x="0" y="0" scaleX="1" scaleY="1">
+			<e:Button id="closeBtn" label="" anchorOffsetX="0.5" anchorOffsetY="0.5" scaleX="1" scaleY="1" horizontalCenter="462" verticalCenter="-268.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_close_btn_png" source.down="common_close_btn_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Scroller id="left_scroller" width="233" height="473" x="182" y="149" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Group id="left_group" width="233">
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+			</e:Group>
+			</e:Scroller>
+			<e:Image id="GongGao_png" width="76" height="41" horizontalCenter="0" top="68" source="GongGao_png"/>
+			<e:Image x="767" y="313" source="common_fish_png" fillMode="clip"/>
+			<e:Label id="noticeInfoLal" text="Label" x="450" y="174" anchorOffsetX="0" width="621" anchorOffsetY="0" height="407" size="24"/>
+			<e:Image x="413.5" y="147.5" fillMode="scale" anchorOffsetX="0" width="679" anchorOffsetY="0" height="469" source="common_fangkuang_png" scale9Grid="2,2,19,19"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>
